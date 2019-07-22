@@ -1,0 +1,26 @@
+textarea{
+    border-radius: 3px;
+    height: 150px!important;
+    font-size: 1.1em;
+    border: 3px solid black;
+   
+    
+}
+
+ul{
+list-style: none;}
+
+.frase{ font-size: 1.3em}
+
+.disabled{
+    background-color: lightgray
+}
+.icon_position{
+    vertical-align: middle;
+}
+.green_field{
+    border: 10px solid green;
+}
+.red_field{
+    border: 10px solid red;
+}
