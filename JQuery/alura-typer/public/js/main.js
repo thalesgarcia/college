@@ -92,7 +92,5 @@ function insertScore(){
     var user="Thales";
 
     var line='<tr><td>'+user+'</td><td>'+wC+'</td> </tr>';
-
     tbob.prepend(line);
-
 }
