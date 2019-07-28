@@ -1,0 +1,43 @@
+
+
+/** Footer **/
+footer {
+  display: block;
+  position: relative;
+  &::after {
+    content: "";
+    background: url(../imagens/fundo-rodape.png);
+    opacity: .02;
+    @include espacamento;
+  }
+  &::before {
+    content: "";
+    background: #1e2c35;
+    @include espacamento;
+  }
+  .container {
+    padding-top: 3*$size-padrao;
+    height: 6.5*$size-padrao;
+    position: relative;
+    img {
+      width: 250px;
+    }
+  }
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+}
+.menu-rodape
+{
+  position: absolute;
+  top: 1em;
+  right: 0;
+  ul li {
+    display: inline-block;
+    margin-left: 2em;
+  }
+  li{
+    display: inline;
+  }
+}
