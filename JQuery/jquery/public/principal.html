@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/libs/materialize.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/selectize.css">
+    <link rel="stylesheet" href="css/libs/selectize.default.css">
+    <link rel="stylesheet" href="css/libs/tooltipster.bundle.min.css">
+    <link rel="stylesheet" href="css/libs/tooltipster-sideTip-punk.min.css">
+    <title>Alura Typer</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="center">Alura Typer</h1>
+        <p class="frase center">
+        </p>
+        <div class="center">
+            <img src="img/spinner.gif" alt="spinner image" id="spinner" class="spin">
+            <p class="err" id="error">Ops, an error occured. Try again</p>
+
+            </div>
+        <ul class="informacoes center">
+            <li>
+                <i class="icon_position small material-icons">description</i>
+                <span id="size-frase"></span> palavras
+            </li>
+            <li> 
+                <i class="icon_position small material-icons">query_builder</i>
+                <span id="time-count"></span> segundos
+            </li>
+        </ul>
+        <textarea name="campo-digitacao" id="input-field" cols="30" rows="8" class="digitacao"></textarea>
+        <ul class="center">
+            <li> 
+                <span id="char-count"></span> Caracteres 
+            </li>
+            <li>
+                 <span id="word-count"></span> Palavras
+            </li>
+        </ul>
+        <div class="btns">
+                <a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons" id="restart">restore</i></a>
+                <a class="btn-floating btn-large waves-effect waves-light green "><i class="material-icons" id="score">assignment</i></a>
+                <a class="btn-floating btn-large waves-effect waves-light blue"><i class="material-icons" id="shuffle">shuffle</i></a>
+                <a class="btn-floating btn-large waves-effect waves-light cyan"><i class="material-icons" id="get-frase">repeat_one</i></a>
+                <input type="number" id="f_id" class="frase_input" min="0">
+
+                <div class="select_user">
+                    <select name="users" id="users">
+                        <option value="Selecione">Selecione um Jogador</option>
+                        <option value="Thales">Thales</option>
+                        <option value="Douglas">Douglas</option>
+                        <option value="Amanda">Amanda</option>
+                        <option value="Aline">Aline</option>
+                    </select>
+                </div>
+
+                <a class="btn-floating btn-large waves-effect waves-light yellow synch"><i class="material-icons tooltip" id="synch" title="Synchonize the score">swap_vert</i></a>
+
+                
+        </div>
+        <section class="score">
+            <h3 class="center">Score</h3>
+            <table class="centered bordered">
+                <thead>
+                    <th>Name</th>
+                    <th>Words Count</th>
+                    <th>Remove</th>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </section>
+    </div>
+</body>
+<script src="js/jquery.js"></script>
+<script src="js/main.js"></script>
+<script src="js/selectize.js"></script>
+<script src="js/tooltipster.bundle.min.js"></script>
+<script src="js/score.js"></script>
+<script src="js/frase.js"></script>
+</html>
