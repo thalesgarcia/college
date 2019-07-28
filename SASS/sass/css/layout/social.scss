@@ -1,0 +1,31 @@
+.social {
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  li {
+    display: inline;
+    
+    a {
+      display: block;
+      width: 55px;
+      height: 55px;
+      @extend %img-replacement;
+      margin-left: 1em;
+    }
+    float: left !important;
+  }
+  a {
+    background-position: top;
+    background-size: 50px 50px;
+    &[href*="facebook"] {
+      background-image: url(../imagens/facebook.png);
+    }
+    &[href*="twitter"] {
+      background-image: url(../imagens/twitter.png);
+    }
+    &[href*="instagram"] {
+      background-image: url(../imagens/instagram.png);
+    }
+  }
+ 
+}

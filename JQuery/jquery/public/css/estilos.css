@@ -1,0 +1,57 @@
+textarea{
+    border-radius: 3px;
+    height: 150px!important;
+    font-size: 1.1em;
+    border: 3px solid black;
+   
+    
+}
+
+ul{
+list-style: none;}
+
+.frase{ font-size: 1.3em}
+
+.disabled{
+    background-color: lightgray
+}
+.icon_position{
+    vertical-align: middle;
+}
+.green_field{
+    border: 10px solid green;
+}
+.red_field{
+    border: 10px solid red;
+}
+.score{
+    display: none
+}
+.err{
+    color: red;
+    font-size: 1.1em;
+    display: none;
+}
+.spin{
+    display: none;
+}
+.frase_input{
+    border-radius: 5px !important;
+    box-shadow: .1em .1em lightblue !important;
+    width: 15em !important; 
+    border: .1em solid rgb(212, 212, 212) !important
+}
+.frase_input:focus{
+    box-shadow: inset 0 0 .5em lightskyblue !important
+}
+.synch{
+    float: right
+}
+.select_user, #users{
+    display: inline-block;
+    margin-left: 15px !important;
+    vertical-align: middle
+}
+.select_user{
+    width: 230px !important;
+}
