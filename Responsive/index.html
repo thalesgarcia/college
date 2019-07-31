@@ -2,6 +2,7 @@
 <html lang="pt-br">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Notícias.com</title>
 
 	<link rel="stylesheet" href="css/estilo.css">
@@ -11,12 +12,14 @@
 
 	<header>
 		<div class="container">
-
+			<button class="open_menu" type="button">Open</button>
 			<h1 class="logo">
-				<img src="img/logo.png" alt="Notícias.com">
+				<img src="img/logo.svg" alt="Notícias.com">
 			</h1>
+			
 
 			<nav class="barra-nav">
+				<button class="close_menu" type="button">Close</button>
 				<ul class="menu-principal">
 					<li><a href="noticias.html" class="noticias">Notícias</a>
 					<li><a href="esportes.html" class="esportes">Esportes</a>
@@ -27,6 +30,7 @@
 					<input type="search" id="campo-busca">
 					<button type="submit">Buscar</button>
 				</form>
+				
 			</nav>
 		</div>
 	</header>
@@ -61,7 +65,9 @@
 				<h2>Estádios das Olimpíadas estão atrasados</h2>
 			</a>
 		</div>
-
+		<!-- <svg>
+			<circle cx="50" cy="50" r="40" fill="#F90">
+		</svg>	 -->
 		<div class="secao">
 			<a href="noticia7.html" class="chamada esportes normal mini">
 				<img src="img/esporte1.jpg" alt="Time perdedor">
@@ -105,6 +111,7 @@
 			</a>
 		</div>
 	</main>
+	<script src="js/jquery.js"></script>
 	<script src="js/menu.js"></script>
 </body>
 </html>

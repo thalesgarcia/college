@@ -16,10 +16,50 @@ body {
 
 header {
 	background: #f0f0f0;
-	width: 100%;
+	width: 100%; 
+	padding: 0.5em 0;
+}
+
+.destaques {
+    margin-top: 1em;
+}
+.barra-nav {
+    margin: 0.4em 0;
 }
 .logo img {
 	display: block;
+}
+
+
+.secao {
+    width: 100%;
+}
+
+
+.mini {
+    float: left;
+    width: 50%;
+}
+
+.container{
+	 margin: 0 auto;
+	 max-width: 1200px;
+}
+.logo,.secao{
+	padding: 0 1%
+}
+img{
+	max-width: 100%;
+}
+.logo,
+.busca,
+.barra-nav,
+.menu-principal {
+    display: inline-block;
+    vertical-align: middle;
+}
+.menu-principal li {
+    float: left;
 }
 
 /* busca */
@@ -168,4 +208,106 @@ border-radius: 5px;
 .tv .bolinha:first-of-type {
 	background: #555;
 	margin-left: 1.5em;
+}
+@media (max-width: 600px) {
+    html {
+        font-size: 1.125em;
+	}
+	.secao{width: 50%}
+	.barra-nav {
+		margin: 0;
+		background: #f0f0f0;
+		padding: 1em;
+		height: 100%;
+		width: 90%;
+		max-width: 320px;
+		position: fixed;	
+		z-index: 1;
+		top: 0;
+		left: -90%;
+		transition: left 0.5s ease-in-out
+	}
+	.active_menu .barra-nav{
+		left: 0;
+	}
+	.active_menu::after{
+		content: "";
+		display: block;
+		position: fixed;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		top: 0;
+		background-color: rgba(0,0,0,0.4)
+	}
+	.menu-principal li{
+		padding: 1em 0;
+		width: 100%;
+	}
+	.open_menu, .close_menu{
+		background: none;
+		border: 0;
+		outline: 0;
+		-webkit-appearance: none;
+		font-size:  1.6em;
+		text-indent: -9999em;
+	}
+
+	.open_menu{
+		height: 0;
+		width: .75em;
+		padding-top: .125em;
+		border-top: .375em double #000;
+		border-bottom: .125em solid #000;
+		vertical-align: middle;
+		margin: 0.5em; 
+	}
+	.close_menu{
+		position: relative;
+		height: 1em;
+		width: 1em;
+	}
+	.close_menu::before{
+		content: '\00D7';
+        position: absolute;
+        top: 0;
+        left: 0;
+        text-indent: 0;
+	}
+
+	.logo img{ width: 200px;}
+}
+@media not all and (max-width:600px){
+	.open_menu,
+	.close_menu{
+		display: none
+	}
+	.logo img{ width: 200px;}
+}
+@media(min-width:768px){
+	.secao {
+		width: 33.333%;
+		float: left;
+	}
+	.open_menu,
+	.close_menu{
+		display: none
+	}
+	.logo img{ width: 200px;}
+}
+
+@media(min-width:992px){
+	.secao {
+		width: 33.333%;
+	}
+}
+@media (min-width: 1000px) {
+    html {
+        font-size: 1.25em;
+    }
+}
+@media(min-width:1200px){
+	.secao {
+		width: 33.333%;
+	}
 }
