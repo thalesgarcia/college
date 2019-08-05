@@ -2,16 +2,16 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Negociations</title>
+    <title>Negotiations</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/bootstrap-theme.css">
     
 </head>
 <body class="container">
     
-    <h1 class="text-center">Negociation</h1>
+    <h1 class="text-center">Negotiation</h1>
     
-    <form class="form">
+    <form class="form" onsubmit="nc1.add(event)">
         
         <div class="form-group">
             <label for="data">Date</label>
@@ -33,7 +33,7 @@
     
     <div class="text-center">
         <button class="btn btn-primary text-center" type="button">
-            Import Negociation
+            Import Negotiation
         </button>
         <button class="btn btn-primary text-center" type="button">
            Delete
@@ -41,23 +41,21 @@
     </div> 
     <br>
     <br>
+    <div id="negotiationView"></div>
+    <div id="msgView"></div>
     
-    <table class="table table-hover table-bordered">
-        <thead>
-            <tr>
-                <th>DATE</th>
-                <th>QUANTITY</th>
-                <th>VALUE</th>
-                <th>VOLUME</th>
-            </tr>
-        </thead>
-        
-        <tbody>
-        </tbody>
-        
-        <tfoot>
-        </tfoot>
-    </table>
-    <script src="js/index.js"></script>
+    <script src="js/app/controllers/NegociationController.js"></script>
+    <script src="js/app/models/Negociation.js"></script>
+    <script src="js/app/helpers/DateHelper.js"></script>
+    <script src="js/app/models/ListNegociation.js"></script>
+    <script src="js/app/views/View.js"></script>
+    <script src="js/app/views/NegotiationView.js"></script>
+    <script src="js/app/models/Msg.js"></script>
+    <script src="js/app/views/MsgView.js"></script>
+   
+    <script>
+        //let n1 = new Negotiation(new Date(), 5, 700);
+        let nc1= new NegociationController();
+    </script>
 </body>
 </html>
