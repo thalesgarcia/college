@@ -4,14 +4,15 @@ class NegotiationView extends View{
     }
 
    template(mod){
+       
     return  `
     <table class="table table-hover table-bordered table-striped">
         <thead>
             <tr>
-                <th>DATE</th>
-                <th>QUANTITY</th>
-                <th>VALUE</th>
-                <th>VOLUME</th>
+                <th onclick="nc1.order('date')">DATE</th>
+                <th onclick="nc1.order('quantity')">QUANTITY</th>
+                <th onclick="nc1.order('value')">VALUE</th>
+                <th onclick="nc1.order('volume')">VOLUME</th>
             </tr>
         </thead>
         
@@ -29,10 +30,11 @@ class NegotiationView extends View{
         <tfoot>
             <td colspan="3"<td>
             <td>${
-                mod.negotiations.reduce((tot,n)=>tot+n.volume ,0.0)
+                mod.totalVol
             }</td> 
         </tfoot>
-    </table>`;
+    </table>
+    `;
     /*
     ${(function(){
                 let tot=0;

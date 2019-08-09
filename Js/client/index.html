@@ -5,12 +5,13 @@
     <title>Negotiations</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/bootstrap-theme.css">
+    <link rel="stylesheet" href="css/estilo.css">
     
 </head>
 <body class="container">
     
     <h1 class="text-center">Negotiation</h1>
-    
+    <div id="msgView"></div>
     <form class="form" onsubmit="nc1.add(event)">
         
         <div class="form-group">
@@ -27,22 +28,24 @@
             <label for="valor">Value</label>
             <input id="valor" type="number" class="form-control"  min="0.01" step="0.01" value="0.0" required />
         </div>
-        
-        <button class="btn btn-primary" type="submit">Include</button>
+        <div>
+            <button class="btn btn-primary" type="submit">Include</button>
+            <button id="send" class="btn btn-info" onclick="nc1.sendPost(event)">Send data</button>
+        </div>
     </form>
     
     <div class="text-center">
-        <button class="btn btn-primary text-center" type="button">
+        <button class="btn btn-primary text-center" type="button" onclick="nc1.importNeg()">
             Import Negotiation
         </button>
-        <button class="btn btn-primary text-center" type="button">
+        <button class="btn btn-primary text-center" type="button" onclick="nc1.deleteNeg()">
            Delete
         </button>
     </div> 
     <br>
     <br>
     <div id="negotiationView"></div>
-    <div id="msgView"></div>
+    
     
     <script src="js/app/controllers/NegociationController.js"></script>
     <script src="js/app/models/Negociation.js"></script>
@@ -52,10 +55,60 @@
     <script src="js/app/views/NegotiationView.js"></script>
     <script src="js/app/models/Msg.js"></script>
     <script src="js/app/views/MsgView.js"></script>
-   
+    <script src="js/app/services/ProxyFactory.js"> </script>
+    <script src="js/app/helpers/Bind.js"></script>
+    <script src="js/app/services/NegotiationServices.js"></script>
+    <script src="js/app/services/HttpService.js"></script>
     <script>
         //let n1 = new Negotiation(new Date(), 5, 700);
         let nc1= new NegociationController();
     </script>
+    <!-- <script>
+        //Proxy, it encapsule the object/class and all the traps(methods) are passed into the proxym whitout changing the object it self. The 1 parameter is the objetc/class, the second is a handler wich is the traps, the methods to change something in the class
+        let neg= new Proxy(new Negotiation(new Date(),1,100),{
+            get:function(target,prop,receiver){
+                //the get will be called every time someone tries to invoke any method of this class. It recieves 3 p: 1 is the original object tha its beeing encapsulated at the proxy,2; is the propierty that is beeing accessed, 3; a referecen to the proxy it self
+                console.log(`${prop} intercepted`);
+                //it shows only wich prop was invoked. To show the value, do this(return the value):
+                 return  Reflect.get(target, prop, receiver)
+            },
+            set:function(target,prop,value,receiver){
+                console.log(`Old value: ${target[prop]} New value : ${value}` )
+                return Reflect.set(target,prop,value,receiver);
+            }   
+        });
+        console.log(neg.quantity);
+        neg._quantity=10;
+        console.log(neg.value)
+        neg._value=150;
+
+    </script> -->
+
+    <!-- <script>
+        let listN= new Proxy(new ListNegociation(),{
+            get:function(target,prop,receiver){
+                // console.log(`${prop} intercepted`);
+                // return Reflect.get(target,prop,receiver)
+                //because sometimes the methods are not executed, do a get and this: checks if the get is a function, in case the set dosent work
+                if(['add', 'emptyNeg'].includes(prop) && typeof(target[prop])==typeof(Function)){
+                    return function(){
+                        console.log(`intercepting ${prop}`)
+                        //when add, a function it substitute the function add, and the arguments is all the arguments passed to the function
+                        Reflect.apply(target[prop],target,arguments);
+                    }
+                }
+                return Reflect.get(target,prop,receiver)
+            },
+            set:function(target,prop,value,receiver){
+                console.log(`Old value: ${target[prop]} New value : ${value}` )
+                return Reflect.set(target,prop,value,receiver)
+            }
+
+        });
+
+        listN.add(new Negotiation(new Date(),2,100));
+       
+        console.log("OI", listN._negotiacions)
+    </script> -->
 </body>
 </html>
