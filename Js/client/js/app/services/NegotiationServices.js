@@ -29,14 +29,12 @@ class NegotiationServices {
         })
     }
 
-
     getNegotiations() {
         return Promise.all([this.getWeekNegotiation(),
             this.getLastWeekNegotiation(), this.getPastLastWeekNegotiation()
         ]).then(
             period=>{
                 let negots= period.reduce((data,period)=>data.concat(period,[]))
-
                 return negots
             }
         ).catch(error => {throw new Error(error)})

@@ -23,8 +23,6 @@ class NegociationController{
         // });
         this._msg= new Bind(
             new Msg(),new MsgView($("#msgView")),'text');
-        
-       
         // ProxyFactory.create( new Msg(),['text'],(mod)=>{
         //     this._msgView._update(mod)
         // })
@@ -51,8 +49,6 @@ class NegociationController{
         }catch(error){
             this._msg.text=error
         }
-        
-    
     }
 
     _createNegotiation(){
@@ -126,7 +122,6 @@ class NegociationController{
             })
     }
 }
-
 //convert the input value into array to be interpreted as a date obj
         //let d= new Date(this._date.value.replace(/-/g,','))
 
