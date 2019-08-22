@@ -5,10 +5,13 @@ import './css/pure-min.css';
 import './css/side-menu.css';
 import './css/grids-min.css';
 import './css/grids-responsive-min.css';
+import 'react-toastify/dist/ReactToastify.css';
 import './css/style.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
+
+
 
 import People from './Components/Pages/People';
 import Starships from './Components/Pages/Starships'

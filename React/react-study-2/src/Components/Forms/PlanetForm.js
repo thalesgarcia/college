@@ -1,10 +1,116 @@
 import React,{Component} from 'react';
 import CustomInput from '../../Utils/CustomInput';
 import PopUp from '../../Utils/PopUp';
+import FormValidator from '../../Utils/FormValidator';
 class PlanetForm extends Component{
     constructor(){
         super();
         this.inputListener= this.inputListener.bind(this);
+
+        this.validator= new FormValidator(
+            [
+                {
+                    field:'name',
+                    method:'isEmpty',
+                    validWhen:false,
+                    message:'Please type a planet name.'
+                },
+                {
+                    field:'climate',
+                    method:'isEmpty',
+                    validWhen:false,
+                    message:'Please type the planet climate'
+                },
+                {
+                    field:'diameter',
+                    method:'isEmpty',
+                    validWhen:false,
+                    message:'Plese type the planete diameter'
+                },
+                {
+                    field:'diameter',
+                    method:'isInt',
+                    validWhen:true,
+                    args:[{min:0,max:999999}],
+                    message:'Diameter accepsts only int.'
+                },
+                {
+                    field:'gravity',
+                    method:'isEmpty',
+                    validWhen:false,
+                    message:'Please type the planet gravity'
+                },
+                {
+                    field:'gravity',
+                    method:'isInt',
+                    validWhen:true,
+                    message:'Gravity accepst only int.'
+                },
+                {
+                    field:'gravity',
+                    method:'isNumeric',
+                    validWhen:true,
+                    message:'Type a number for gravity.'
+                },
+                {
+                    field:'orbital_period',
+                    method:'isEmpty',
+                    validWhen:false,
+                    message:'Plese type the planet orbital period'
+                },
+                {
+                    field:'orbital_period',
+                    method:'isNumeric',
+                    validWhen:true,
+                    message:'Type a number for orbital period.'
+                },
+                {
+                    field:'rotation_period',
+                    method:'isNumeric',
+                    validWhen:true,
+                    message:'Rotation period accepts only numbers.'
+                },
+                {
+                    field:'rotation_period',
+                    method:'isEmpty',
+                    validWhen:false,
+                    message:'Type a number for rotation period.'
+                },
+                {
+                    field:'population',
+                    method:'isEmpty',
+                    validWhen:false,
+                    message:'Please inform the population number.'
+                },
+                {
+                    field:'population',
+                    method:'isInt',
+                    validWhen:true,
+                    message:'Population accepts only numbers.'
+                },
+                {
+                    field:'surface_water',
+                    method:'isEmpty',
+                    validWhen:false,
+                    message:'Please inform the surface water of this planet(number).'
+                },
+                {
+                    field:'surface_water',
+                    method:'isInt',
+                    validWhen:true,
+                    message:'Inform the percentage, only numbers fro the surface water.'
+                },
+                {
+                    field:'terrain',
+                    method:'isEmpty',
+                    validWhen:false,
+                    message:'Please inform the terrain of this planet.'
+                },
+            ]
+        )
+
+
+
         this.initialState={
             planets:[],
             climate:'',
@@ -16,9 +122,13 @@ class PlanetForm extends Component{
             rotation_period:'',
             surface_water:'',
             terrain:'',
+            validation:this.validator.valid()
         }
 
-        this.state=this.initialState
+        this.state=this.initialState;
+
+        
+
     }
 
     inputListener=event=>{
@@ -26,7 +136,22 @@ class PlanetForm extends Component{
         this.setState({[name]:value});
     }
     submitForm=()=>{
-        this.props.submitListener(this.state);       this.setState(this.initialState); PopUp.showMessage ('success','Successfuly recorded');
+        let validation= this.validator.validate(this.state);
+
+        if(validation.isValid){
+            this.props.submitListener(this.state); 
+            this.setState(this.initialState); 
+            PopUp.showMessage ('success','Successfuly recorded');
+        }else{
+            let{name,diameter,rotation_period,orbital_period,gravity,population,climate,terrain,surface_water}=validation;
+            let fields=[name,diameter,rotation_period,orbital_period,gravity,population,climate,terrain,surface_water];
+            let invalidFields= fields.filter(element=>{
+                return element.isInvalid;
+            });
+            invalidFields.forEach(field=>{
+                PopUp.showMessage('error',field.message)
+            })
+        }
     }
 
     render(){

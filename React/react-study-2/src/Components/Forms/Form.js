@@ -3,6 +3,7 @@ import CustomInput from '../../Utils/CustomInput'
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import PopUp from '../../Utils/PopUp';
+import FormValidator from '../../Utils/FormValidator';
 class Form extends Component{
 
     constructor(){
@@ -10,6 +11,73 @@ class Form extends Component{
         
        // this.sendForm=this.sendForm.bind(this);
         this.inputListener=this.inputListener.bind(this)
+        this.validator= new FormValidator(
+          [
+            {
+                field:'name',
+                method:'isEmpty',
+                validWhen:false,
+                message:'Please type a name'
+            },
+            {
+              field:'height',
+              method:'isEmpty',
+              validWhen:false,
+              message:'Please type the person height'
+            } ,
+            {
+              field:'height',
+              method:'isInt',
+              validWhen:true,
+              message:'Height accepts only numbers'
+            },
+            {
+              field:'mass',
+              method:'isEmpty',
+              validWhen:false,
+              message:'Please type the body mass'
+            },
+            {
+              field:'mass',
+              method:'isInt',
+              validWhen:true,
+              message:'Mass accepts only numbers'
+            },
+            {
+              field:'hair_color',
+              method:'isEmpty',
+              validWhen:false,
+              message:'Please type the hair color'
+            },
+            {
+              field:'skin_color',
+              method:'isEmpty',
+              validWhen:false,
+              message:'Please type the skin color'
+            },
+            {
+              field:'eye_color',
+              method:'isEmpty',
+              validWhen:false,
+              message:'Please type the eye color'
+            },
+            {
+              field:'gender',
+              method:'isEmpty',
+              validWhen:false,
+              message:'Please type the gender'
+            },
+            {
+              field:'birth_year',
+              method:'isEmpty',
+              validWhen:false,
+              message:'Please type the birth year'
+            }
+
+          ]
+        )
+
+
         this.initialState={
           list:[],
           name:'',
@@ -20,6 +88,7 @@ class Form extends Component{
           gender:'',
           eye_color:'',
           birth_year:'',
+          validation:this.validator.valid()
         }
     
         this.state=this.initialState;
@@ -29,10 +98,22 @@ class Form extends Component{
         this.setState({[name]:value});
       }
       submitForm=()=>{
+        let validation= this.validator.validate(this.state);
+        if(validation.isValid){
           this.props.submitListener(this.state);
           this.setState(this.initialState);
           PopUp.showMessage('success','Successfuly recorded');
+        }else{
+          let{ name, height, skin_color, hair_color, mass, gender, eye_color, birth_year}=validation;
+          let fields=[name, height, skin_color, hair_color, mass, gender, eye_color, birth_year];
+          let invalidFields= fields.filter(element=>{
+            return element.isInvalid;
+          });
+          invalidFields.forEach(field=>{
+            PopUp.showMessage('error',field.message)
+          })
       }
+    }
 
     render(){
         return(

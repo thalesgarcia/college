@@ -1,14 +1,9 @@
 import React, {Component, Fragment} from 'react';
 import Dropzone from 'react-dropzone';
 import request from 'superagent';
-import './css/pure-min.css';
-import './css/side-menu.css';
-import './css/grids-min.css';
-import './css/grids-responsive-min.css';
-import './css/style.css';
 import Menu from './Components/Menu';
 import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import './css/fontawesome.min.css';
 
 
 const CLOUDINARY_UPLOAD_PRESET = 'kfolder';
@@ -91,7 +86,7 @@ class App extends Component{
               multiple={false}>
                 {({getRootProps, getInputProps}) => {
                   return (
-                    <div
+                    <div className="upload"
                       {...getRootProps()}
                     >
                       <input {...getInputProps()} />
@@ -102,14 +97,17 @@ class App extends Component{
                   )
               }}
             </Dropzone>
-           
-            <div>
-              {this.state.uploadedFileCloudinaryUrl === '' ? null :
+            
               <div>
-                <p>{this.state.uploadedFile.name}</p>
-                <img src={this.state.uploadedFileCloudinaryUrl} alt="Uploaded from user" className="imgUploaded"/>
-              </div>}
-            </div>  
+                {this.state.uploadedFileCloudinaryUrl === '' ? null :
+                <div>
+                  <p>{this.state.uploadedFile.name}</p>
+                  <img src={this.state.uploadedFileCloudinaryUrl} alt="Uploaded from user" className="imgUploaded"/>
+                  
+                </div>
+                
+              }
+              </div> 
             </div>
           </div>  
         </div>

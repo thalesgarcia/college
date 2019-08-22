@@ -44,7 +44,7 @@ class People extends Component{
             return li.name !== name;
             })
         });
-        PopUp.showMessage('error', 'Person removed');
+        PopUp.showMessage('warn', 'Person removed');
         
     }
     render(){

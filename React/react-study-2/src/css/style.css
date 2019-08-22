@@ -44,3 +44,12 @@
         .defaultTableSize{
             margin-left:-288px !important;
         }
+        .upload{
+            background-color: lightgray;
+            text-align: center;
+            content:'↕↕'
+            
+        }
+        .upload:hover{
+            cursor:pointer
+        }

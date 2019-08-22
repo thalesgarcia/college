@@ -1,10 +1,145 @@
 import React,{Component} from 'react';
 import CustomInput from '../../Utils/CustomInput';
 import PopUp from '../../Utils/PopUp';
+import FormValidator from '../../Utils/FormValidator'
 class StarShipForm extends Component{
     constructor(){
         super();
         this.inputListener= this.inputListener.bind(this);
+
+        this.validator= new FormValidator(
+            [
+                {
+                    field:'name',
+                    method:'isEmpty',
+                    validWhen:false,
+                    message:'Plese type the starship name'
+                },
+                {
+                    field:'model',
+                    method:'isEmpty',
+                    validWhen:false,
+                    message:'Please type the starship model'
+                },
+                {
+                    field:'starship_class',
+                    method:'isEmpty',
+                    validWhen:false,
+                    message:'Please type the starship class'
+                },
+                {
+                    field:'manufacturer',
+                    method:'isEmpty',
+                    validWhen:false,
+                    message:'Please type the manufacturer'
+                },
+                {
+                    field:'cost_in_credits',
+                    method:'isEmpty',
+                    validWhen:false,
+                    message:'Please type the starship cost'
+                },
+                {
+                    field:'cost_in_credits',
+                    method:'isNumeric',
+                    validWhen:true,
+                    args:[{min:1,max:999999999}],
+                    message:'Please type the value(number) of the starship'
+                },
+                {
+                    field:'length',
+                    method:'isEmpty',
+                    validWhen:false,
+                    message:'Please type the length of the starship'
+                },
+                {
+                    field:'length',
+                    method:'isInt',
+                    validWhen:true,
+                    args:[{min:1,max:9999}],
+                    message:'Please inform the numeric length of the starship'
+                },
+                {
+                    field:'crew',
+                    method:'isEmpty',
+                    validWhen:false,
+                    message:'Please inform the total crew this starship supports'
+                },
+                {
+                    field:'crew',
+                    method:'isInt',
+                    validWhen:true,
+                    args:[{min:1,max:9999}],
+                    message:'Crew field accepst only numbers'
+                },
+                {
+                    field:'max_atmosphering_speed',
+                    method:'isEmpty',
+                    validWhen:false,
+                    message:'Please type the max speed in atmosphere'
+                },
+                {
+                    field:'max_atmosphering_speed',
+                    method:'isInt',
+                    validWhen:true,
+                    args:[{min:1,max:999999}],
+                    message:'Max speed accepts only numbers'
+                },
+                {
+                    field:'passengers',
+                    method:'isEmpty',
+                    validWhen:false,
+                    message:'Please type the max passengers this shipp accepts'
+                },
+                {
+                    field:'passengers',
+                    method:'isInt',
+                    validWhen:true,
+                    args:[{min:1,max:9999}],
+                    message:'Passengers accepts only numbers'
+                },
+                {
+                    field:'MGLT',
+                    method:'isEmpty',
+                    validWhen:false,
+                    args:[{min:1,max:9999}],
+                    message:'Please type the megalight of this starship'
+                },
+                {
+                    field:'MGLT',
+                    method:'isInt',
+                    validWhen:true,
+                    args:[{min:1,max:9999}],
+                    message:'Megalight accepts only numbers'
+                },
+                {
+                    field:'cargo_capacity',
+                    method:'isEmpty',
+                    validWhen:false,
+                    args:[{min:1,max:9999}],
+                    message:'Please type max cargo capacity for this ship'
+                },
+                {
+                    field:'consumables',
+                    method:'isEmpty',
+                    validWhen:false,
+                    message:'Please type the max consumables of this ship'
+                },
+                {
+                    field:'consumables',
+                    method:'isInt',
+                    validWhen:true,
+                    message:'Consumables accepsts only numbers'
+                },
+                {
+                    field:'hyperdrive_rating',
+                    method:'isEmpty',
+                    validWhen:false,
+                    message:'Please type the hyperdrive rating'
+                }                               
+            ]
+        )
+
         this.initialState={
             ships:[],
             name:'',
@@ -20,6 +155,7 @@ class StarShipForm extends Component{
             MGLT:'',
             cargo_capacity :'',
             consumables :'',
+            validation:this.validator.valid()
         }
 
         this.state=this.initialState;
@@ -30,7 +166,25 @@ class StarShipForm extends Component{
         this.setState({[name]:value});
     }
 
-    submitForm=()=>{this.props.submitListener(this.state);this.setState(this.initialState); PopUp.showMessage('success','Successfuly recorded');}
+    submitForm=()=>{
+        let validation=this.validator.validate(this.state);
+        if(validation.isValid){
+            this.props.submitListener(this.state);
+            this.setState(this.initialState); 
+            PopUp.showMessage('success','Successfuly recorded');}
+        else{
+            let {name,model,starship_class,manufacturer,cost_in_credits , length ,crew,passengers, max_atmosphering_speed ,hyperdrive_rating ,MGLT,cargo_capacity ,consumables}=validation;
+
+            let fields=[name,model,starship_class,manufacturer,cost_in_credits , length ,crew,passengers, max_atmosphering_speed ,hyperdrive_rating ,MGLT,cargo_capacity ,consumables];
+            let invalidFields=fields.filter(element=>{
+                return element.isInvalid
+            });
+            invalidFields.forEach(field=>{
+                PopUp.showMessage('error',field.message);
+            })
+        }
+    }
+        
 
     render(){
 
