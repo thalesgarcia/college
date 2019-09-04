@@ -1,0 +1,7 @@
+C:\Users\karek\Documents\Alura\C#\LearningCSharp\1 - byteBank\bin\Debug\1 - byteBank.exe.config
+C:\Users\karek\Documents\Alura\C#\LearningCSharp\1 - byteBank\bin\Debug\1 - byteBank.exe
+C:\Users\karek\Documents\Alura\C#\LearningCSharp\1 - byteBank\bin\Debug\1 - byteBank.pdb
+C:\Users\karek\Documents\Alura\C#\LearningCSharp\1 - byteBank\obj\Debug\1 - byteBank.csprojAssemblyReference.cache
+C:\Users\karek\Documents\Alura\C#\LearningCSharp\1 - byteBank\obj\Debug\1 - byteBank.csproj.CoreCompileInputs.cache
+C:\Users\karek\Documents\Alura\C#\LearningCSharp\1 - byteBank\obj\Debug\1 - byteBank.exe
+C:\Users\karek\Documents\Alura\C#\LearningCSharp\1 - byteBank\obj\Debug\1 - byteBank.pdb

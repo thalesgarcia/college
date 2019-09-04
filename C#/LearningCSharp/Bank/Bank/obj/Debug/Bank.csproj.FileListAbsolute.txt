@@ -1,0 +1,7 @@
+C:\Users\karek\Documents\Alura\C#\LearningCSharp\Bank\Bank\bin\Debug\Bank.exe.config
+C:\Users\karek\Documents\Alura\C#\LearningCSharp\Bank\Bank\bin\Debug\Bank.exe
+C:\Users\karek\Documents\Alura\C#\LearningCSharp\Bank\Bank\bin\Debug\Bank.pdb
+C:\Users\karek\Documents\Alura\C#\LearningCSharp\Bank\Bank\obj\Debug\Bank.csprojAssemblyReference.cache
+C:\Users\karek\Documents\Alura\C#\LearningCSharp\Bank\Bank\obj\Debug\Bank.csproj.CoreCompileInputs.cache
+C:\Users\karek\Documents\Alura\C#\LearningCSharp\Bank\Bank\obj\Debug\Bank.exe
+C:\Users\karek\Documents\Alura\C#\LearningCSharp\Bank\Bank\obj\Debug\Bank.pdb

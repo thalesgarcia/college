@@ -1,0 +1,7 @@
+C:\Users\karek\Documents\Alura\C#\LearningCSharp\1-FirstProject\bin\Debug\1-FirstProject.exe.config
+C:\Users\karek\Documents\Alura\C#\LearningCSharp\1-FirstProject\bin\Debug\1-FirstProject.exe
+C:\Users\karek\Documents\Alura\C#\LearningCSharp\1-FirstProject\bin\Debug\1-FirstProject.pdb
+C:\Users\karek\Documents\Alura\C#\LearningCSharp\1-FirstProject\obj\Debug\1-FirstProject.csprojAssemblyReference.cache
+C:\Users\karek\Documents\Alura\C#\LearningCSharp\1-FirstProject\obj\Debug\1-FirstProject.csproj.CoreCompileInputs.cache
+C:\Users\karek\Documents\Alura\C#\LearningCSharp\1-FirstProject\obj\Debug\1-FirstProject.exe
+C:\Users\karek\Documents\Alura\C#\LearningCSharp\1-FirstProject\obj\Debug\1-FirstProject.pdb
