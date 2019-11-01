@@ -1,0 +1,14 @@
+C:\Users\karek\Downloads\Alura\college\C#\Tests\Testes\LeilaoOnline.Core.ConsoleApp\bin\Debug\netcoreapp2.1\LeilaoOnline.Core.ConsoleApp.deps.json
+C:\Users\karek\Downloads\Alura\college\C#\Tests\Testes\LeilaoOnline.Core.ConsoleApp\bin\Debug\netcoreapp2.1\LeilaoOnline.Core.ConsoleApp.runtimeconfig.json
+C:\Users\karek\Downloads\Alura\college\C#\Tests\Testes\LeilaoOnline.Core.ConsoleApp\bin\Debug\netcoreapp2.1\LeilaoOnline.Core.ConsoleApp.runtimeconfig.dev.json
+C:\Users\karek\Downloads\Alura\college\C#\Tests\Testes\LeilaoOnline.Core.ConsoleApp\bin\Debug\netcoreapp2.1\LeilaoOnline.Core.ConsoleApp.dll
+C:\Users\karek\Downloads\Alura\college\C#\Tests\Testes\LeilaoOnline.Core.ConsoleApp\bin\Debug\netcoreapp2.1\LeilaoOnline.Core.ConsoleApp.pdb
+C:\Users\karek\Downloads\Alura\college\C#\Tests\Testes\LeilaoOnline.Core.ConsoleApp\bin\Debug\netcoreapp2.1\LeilaoOnline.Core.dll
+C:\Users\karek\Downloads\Alura\college\C#\Tests\Testes\LeilaoOnline.Core.ConsoleApp\bin\Debug\netcoreapp2.1\LeilaoOnline.Core.pdb
+C:\Users\karek\Downloads\Alura\college\C#\Tests\Testes\LeilaoOnline.Core.ConsoleApp\obj\Debug\netcoreapp2.1\LeilaoOnline.Core.ConsoleApp.csprojAssemblyReference.cache
+C:\Users\karek\Downloads\Alura\college\C#\Tests\Testes\LeilaoOnline.Core.ConsoleApp\obj\Debug\netcoreapp2.1\LeilaoOnline.Core.ConsoleApp.csproj.CoreCompileInputs.cache
+C:\Users\karek\Downloads\Alura\college\C#\Tests\Testes\LeilaoOnline.Core.ConsoleApp\obj\Debug\netcoreapp2.1\LeilaoOnline.Core.ConsoleApp.AssemblyInfoInputs.cache
+C:\Users\karek\Downloads\Alura\college\C#\Tests\Testes\LeilaoOnline.Core.ConsoleApp\obj\Debug\netcoreapp2.1\LeilaoOnline.Core.ConsoleApp.AssemblyInfo.cs
+C:\Users\karek\Downloads\Alura\college\C#\Tests\Testes\LeilaoOnline.Core.ConsoleApp\obj\Debug\netcoreapp2.1\LeilaoOnline.Core.ConsoleApp.csproj.CopyComplete
+C:\Users\karek\Downloads\Alura\college\C#\Tests\Testes\LeilaoOnline.Core.ConsoleApp\obj\Debug\netcoreapp2.1\LeilaoOnline.Core.ConsoleApp.dll
+C:\Users\karek\Downloads\Alura\college\C#\Tests\Testes\LeilaoOnline.Core.ConsoleApp\obj\Debug\netcoreapp2.1\LeilaoOnline.Core.ConsoleApp.pdb

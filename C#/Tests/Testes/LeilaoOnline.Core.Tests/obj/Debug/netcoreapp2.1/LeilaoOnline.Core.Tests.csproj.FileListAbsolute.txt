@@ -1,0 +1,17 @@
+C:\Users\karek\Downloads\Alura\college\C#\Tests\Testes\LeilaoOnline.Core.Tests\bin\Debug\netcoreapp2.1\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+C:\Users\karek\Downloads\Alura\college\C#\Tests\Testes\LeilaoOnline.Core.Tests\bin\Debug\netcoreapp2.1\xunit.runner.reporters.netcoreapp10.dll
+C:\Users\karek\Downloads\Alura\college\C#\Tests\Testes\LeilaoOnline.Core.Tests\bin\Debug\netcoreapp2.1\xunit.runner.utility.netcoreapp10.dll
+C:\Users\karek\Downloads\Alura\college\C#\Tests\Testes\LeilaoOnline.Core.Tests\bin\Debug\netcoreapp2.1\LeilaoOnline.Core.Tests.deps.json
+C:\Users\karek\Downloads\Alura\college\C#\Tests\Testes\LeilaoOnline.Core.Tests\bin\Debug\netcoreapp2.1\LeilaoOnline.Core.Tests.runtimeconfig.json
+C:\Users\karek\Downloads\Alura\college\C#\Tests\Testes\LeilaoOnline.Core.Tests\bin\Debug\netcoreapp2.1\LeilaoOnline.Core.Tests.runtimeconfig.dev.json
+C:\Users\karek\Downloads\Alura\college\C#\Tests\Testes\LeilaoOnline.Core.Tests\bin\Debug\netcoreapp2.1\LeilaoOnline.Core.Tests.dll
+C:\Users\karek\Downloads\Alura\college\C#\Tests\Testes\LeilaoOnline.Core.Tests\bin\Debug\netcoreapp2.1\LeilaoOnline.Core.Tests.pdb
+C:\Users\karek\Downloads\Alura\college\C#\Tests\Testes\LeilaoOnline.Core.Tests\bin\Debug\netcoreapp2.1\LeilaoOnline.Core.dll
+C:\Users\karek\Downloads\Alura\college\C#\Tests\Testes\LeilaoOnline.Core.Tests\bin\Debug\netcoreapp2.1\LeilaoOnline.Core.pdb
+C:\Users\karek\Downloads\Alura\college\C#\Tests\Testes\LeilaoOnline.Core.Tests\obj\Debug\netcoreapp2.1\LeilaoOnline.Core.Tests.csprojAssemblyReference.cache
+C:\Users\karek\Downloads\Alura\college\C#\Tests\Testes\LeilaoOnline.Core.Tests\obj\Debug\netcoreapp2.1\LeilaoOnline.Core.Tests.csproj.CoreCompileInputs.cache
+C:\Users\karek\Downloads\Alura\college\C#\Tests\Testes\LeilaoOnline.Core.Tests\obj\Debug\netcoreapp2.1\LeilaoOnline.Core.Tests.AssemblyInfoInputs.cache
+C:\Users\karek\Downloads\Alura\college\C#\Tests\Testes\LeilaoOnline.Core.Tests\obj\Debug\netcoreapp2.1\LeilaoOnline.Core.Tests.AssemblyInfo.cs
+C:\Users\karek\Downloads\Alura\college\C#\Tests\Testes\LeilaoOnline.Core.Tests\obj\Debug\netcoreapp2.1\LeilaoOnline.Core.Tests.csproj.CopyComplete
+C:\Users\karek\Downloads\Alura\college\C#\Tests\Testes\LeilaoOnline.Core.Tests\obj\Debug\netcoreapp2.1\LeilaoOnline.Core.Tests.dll
+C:\Users\karek\Downloads\Alura\college\C#\Tests\Testes\LeilaoOnline.Core.Tests\obj\Debug\netcoreapp2.1\LeilaoOnline.Core.Tests.pdb

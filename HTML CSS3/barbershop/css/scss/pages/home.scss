@@ -1,0 +1,70 @@
+body{
+    background-color: lightgrey;
+}
+.banner{
+    width: 100%;
+}
+p{
+    text-align: center;
+}
+
+.sobre_paragrafo em strong{
+    color:red
+}
+.sobre{
+    display: flex;
+    flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+    align-content: center;
+    margin-bottom: 20px;
+}
+.sobre_paragrafo{
+    line-height: 1.2em;
+}
+.sobre_paragrafo__mission{
+    font-size:1.9em;
+    margin-bottom: 10px;
+}
+.sobre_titulo,.beneficios_titulo{
+    font-size: 27px;
+    font-weight: bold;
+    padding-top: 1.1em;
+    padding-bottom: 1em;
+}
+.beneficios{
+    display: flex;
+    flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+    align-content: center;
+    margin-bottom: 1.3em;
+}
+
+.beneficios_div{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: stretch;
+    align-content: center;
+}
+
+.beneficios_lista__itens{
+    font-style: italic;
+    padding-bottom: .99em;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding-top: .29em;
+}
+.beneficios_imagem{
+    width: 90%;
+    min-width: 60%;
+    border-radius: 5px;
+}

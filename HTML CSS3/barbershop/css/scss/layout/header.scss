@@ -1,0 +1,39 @@
+.header{
+    background-color: white;
+    height: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    float: left;
+   
+}
+.header_titulo{
+    font-weight: bolder;
+    font-size: 1em;
+    padding-left:1em;
+    content: none;
+}
+.header_titulo-imagem{
+    width: 15%;
+}
+.header_lista{
+    display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	align-items: flex-end;
+	align-content: center;
+    margin-top: -36px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+   
+}
+.header_lista_itens{
+    display:inline-block;
+    padding:4px
+}
+.header_lista_itens a{
+    color:black;
+    font-style: unset;
+    text-decoration: unset;
+}
+
