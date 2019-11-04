@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using Xunit;
+﻿using Xunit;
 
 namespace LeilaoOnline.Core.Tests
 {
-    public class ULeilaoTest
+    public class LeilaoTerminaPregao
     {
         [Theory]
         [InlineData(1000,new double[] { 800, 900, 1000, 1200 })]
