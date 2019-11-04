@@ -3,7 +3,7 @@ using System.Linq;
 
 namespace LeilaoOnline.Core
 {
-    public enum LeilaoStatus { andamento, finalizado }
+    public enum LeilaoStatus { andamento, finalizado, antesPregao }
     public class Leilao
     {
         private IList<Lance> _lances;
@@ -31,7 +31,7 @@ namespace LeilaoOnline.Core
 
         public void IniciaPregao()
         {
-
+            status = LeilaoStatus.andamento;
         }
         public void TerminaPregao()
         {
