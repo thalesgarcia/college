@@ -11,10 +11,16 @@
 
 
 @import
-'layout/header.scss';
+'layout/header.scss',
+'layout/menu.scss',
+'layout/footer.scss';
+
+@import'components/lists.scss';
 
 @import
-'pages/home.scss';
+'pages/home.scss',
+'pages/produtos.scss',
+'pages/contato.scss';
 // abstracts/
 // vendors/
 // base/

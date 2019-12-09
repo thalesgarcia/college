@@ -11,53 +11,116 @@
 
 <body>
     <header class="header">
-        <h1 class="header_titulo"><img src="images/img.jpg" alt="logo" class="header_titulo-imagem"> G B</h1>
-        <nav>
-            <ul class="header_lista">
-                <li class="header_lista_itens" ><a href="#">Home</a></li>
-                <li class="header_lista_itens" ><a href="products.html">Produtos</a></li>
-                <li class="header_lista_itens" ><a href="contact.html">Contato</a></li>
+        <h1 class="header_titulo">
+            <a href="index.html">
+                <img src="images/img.jpg" alt="logo" class="header_titulo-imagem">
+            </a>
+        </h1>
+        
+        <nav class="menu-principal menu-principal-closed" id="nav">
+            <button class="menu-principal_btn " type="button">
+                Open
+            </button>
+            <ul class="menu-principal_lista">
+                <li class="menu-principal_lista-itens--active menu-principal_lista-itens " ><a href="#">Home</a></li>
+                <li class="menu-principal_lista-itens" ><a href="products.html">Produtos</a></li>
+                <li class="menu-principal_lista-itens" ><a href="contato.html">Contato</a></li>
             </ul>
         </nav>
     </header>
-    <img src="./images/banner.jpg" alt="garcias banner" class="banner">
-    <div>
-        <section class="sobre">
-            <h2 class="sobre_titulo"> Garcia's Barbeshop</h2>
-            <p class="sobre_paragrafo"> Located at the heart of the city, the <strong> Garcia's Barbeshop </strong>
-                brings whats best in the market
-                for your hair and beard.Founded in 2019, the Garcia's Barbershop already is a reference in the city and
-                is
-                conquering new clients everyday</p><br>
-            <p class="sobre_paragrafo sobre_paragrafo__mission" > <em> Our mission is: <strong>"Proporcionar self-care and
-                        a high quality life style
-                        to our costumers".</strong></em></p><br>
-            <p class="sobre_paragrafo"> We offer exprienced professionals that follow all the fashion changes and
-                styles. The service has a standard
-                of
-                excellence and agility, quality and customer satisfaction.</p>
-        </section>
-    </div>
-    <div>
-        <section class="beneficios">
-            <h2 class="beneficios_titulo">Benefits</h2>
-            <div class="beneficios_div">
-                <ul class="beneficios_lista">
-                    <li class="beneficios_lista__itens">Client Support</li>
-                    <li class="beneficios_lista__itens">Location</li>
-                    <li class="beneficios_lista__itens">Qualified professionals</li>
-                    <li class="beneficios_lista__itens">Customized Space</li>
-                </ul>
-                <img src="images/benefits.jpg" alt="benefits" class="beneficios_imagem">
-                <ul class="beneficios_lista">
-                        <li class="beneficios_lista__itens">High Quality products</li>
-                        <li class="beneficios_lista__itens">Cold beer</li>
-                        <li class="beneficios_lista__itens">Coffe</li>
-                        <li class="beneficios_lista__itens">Rock'n'Roll</li>
+    <main>
+        <header alt="garcias banner" class="banner"></header>
+            <section class="sobre">
+                <h2 class="sobre_titulo"> Garcia's Barbeshop</h2>
+                <p class="sobre_paragrafo"> Located at the heart of the city, the <strong> Garcia's Barbeshop </strong>
+                    brings whats best in the market
+                    for your hair and beard.Founded in 2019, the Garcia's Barbershop already is a reference in the city and
+                    is
+                    conquering new clients everyday</p><br>
+                <p class="sobre_paragrafo sobre_paragrafo__mission" > <em> Our mission is: <strong>"Proporcionar self-care and
+                            a high quality life style
+                            to our costumers".</strong></em></p><br>
+                <p class="sobre_paragrafo"> We offer exprienced professionals that follow all the fashion changes and
+                    styles. The service has a standard
+                    of
+                    excellence and agility, quality and customer satisfaction.</p>
+            </section>
+            <section class="beneficios">
+                <h2 class="beneficios_titulo">Benefits</h2>
+                <div class="beneficios_div">
+                    <ul class="beneficios_lista">
+                        <li class="beneficios_lista__itens">Client Support</li>
+                        <li class="beneficios_lista__itens">Location</li>
+                        <li class="beneficios_lista__itens">Qualified professionals</li>
+                        <li class="beneficios_lista__itens">Customized Space</li>
                     </ul>
+                    <img src="images/benefits.jpg" alt="benefits" class="beneficios_imagem">
+                    <ul class="beneficios_lista">
+                            <li class="beneficios_lista__itens">High Quality products</li>
+                            <li class="beneficios_lista__itens">Cold beer</li>
+                            <li class="beneficios_lista__itens">Coffe</li>
+                            <li class="beneficios_lista__itens">Rock'n'Roll</li>
+                        </ul>
+                </div>
+            </section>
+    </main>
+    <footer class="footer">
+        <div class="footer_linha1">
+            <div class="footer_coluna">
+                <div class="footer_coluna_interna">
+                        <a href="index.html" class="header_titulo-imagem footer_logo">Pagina Inicial</a>
+                        <p class="footer_coluna_interna_texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi aperiam reprehenderit quia ducimus similique eius eos nostrum laudantium debitis quae ipsam, vero esse eveniet dicta qui aut illum, laboriosam aspernatur.</p>
+                </div>
             </div>
-        </section>
-    </div>
+            <div class="footer_coluna">
+                <h2 class="footer_titulo">Contato</h2>
+                <ul class="footer_lista">
+                    <div class="footer_div">
+                        <li class="footer_lista_itens">
+                            <h3 class="footer_subtitulo">Endereço</h3>
+                            <ul>
+                                <li>Logradouro: Rua das barbas, 23</li>
+                                <li>Bairro: Centro</li>
+                                <li>Cidade: Joomla</li>
+                            </ul>
+                        </li>
+                    </div>
+                    <div class="footer_div">
+                        <li class="footer_lista_itens">
+                            <h3 class="footer_subtitulo">Telefone</h3>
+                            <ul>
+                                <li>Fixo: (11) XXXX-XXX</li>
+                                <li>Celular(Claro): (XX) XXXX-XXXX</li>
+                                <li>Celular(Vivo): (XX) XXXX-XXXX</li>
+                            </ul>
+                        </li>
+                    </div>
+                    <li class="footer_lista_itens">
+
+                    </li>
+                </ul>
+            </div>
+            <div class="footer_coluna">
+                    <h2 class="footer_titulo">Social</h2>
+                <ul class="footer_lista">
+                    <li class="footer_lista_itens">
+                        <a href="https://instagram.com" target="_blank">Instagram</a> 
+                    </li>
+                    <li class="footer_lista_itens">
+                            <a href="https://facebook.com" target="_blank">Facebook</a>
+                    </li>
+                    <li class="footer_lista_itens">
+                            <a href="https://twitter.com" target="_blank">Twitter</a>
+                    </li>
+                </ul>
+                </div>
+        </div>
+        <div class="footer_linha2">
+            <span class="footer_linha2_span">BarberShop 2019</span>
+        </div>
+    </footer>
+    <script src="js/jquery.js"></script>
+    <script src="js/menu.js"></script>
 </body>
 
 </html>

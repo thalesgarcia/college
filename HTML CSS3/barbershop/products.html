@@ -4,21 +4,111 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Slab|Ultra&display=swap" rel="stylesheet"> 
         <link rel="stylesheet" href="./css/css/style.css">
-        <title>Home - Garcia's Barbershop</title>
+
+        <title>Products - Garcia's Barbershop</title>
     </head>
     
     <body>
         <header class="header">
-            <h1 class="header_titulo"><img src="images/img.jpg" alt="logo" class="header_titulo-imagem"> G B</h1>
-            <nav>
-                <ul class="header_lista">
-                    <li class="header_lista_itens" ><a href="index.html">Home</a></li>
-                    <li class="header_lista_itens" ><a href="products.html">Produtos</a></li>
-                    <li class="header_lista_itens" ><a href="">Contato</a></li>
+            <h1 class="header_titulo">
+                <a href="index.html">
+                    <img src="images/img.jpg" alt="logo" class="header_titulo-imagem">
+                </a>
+            </h1>
+            
+            <nav class="menu-principal menu-principal-closed" id="nav">
+                <button class="menu-principal_btn " type="button">
+                    Open
+                </button>
+                <ul class="menu-principal_lista">
+                    <li class=" menu-principal_lista-itens " ><a href="index.html">Home</a></li>
+                    <li class="menu-principal_lista-itens--active menu-principal_lista-itens" ><a href="#">Produtos</a></li>
+                    <li class="menu-principal_lista-itens" ><a href="contato.html">Contato</a></li>
                 </ul>
             </nav>
         </header>
-    
+        <main class="main_produto">
+            <section class="produtos">
+                <ul class="produtos_lista">
+                    <li class="produtos_lista_itens">
+                        <h2 class="produtos_lista_titulo">Cabelo</h2>
+                        <img class="produtos_lista_imagens" src="./images/cabelo.jpg" alt="Icone cabelo">
+                        <p class="produtos_descricao">Corte tradicional americano</p>
+                        <p class="produtos_valor"> R$: 25,00</p>
+                    </li>
+                    <li class="produtos_lista_itens">
+                        <h2 class="produtos_lista_titulo">Barba</h2>
+                        <img class="produtos_lista_imagens" src="./images/barba.jpg" alt="Icone cabelo">
+                        <p class="produtos_descricao">Corte tradicional americano</p>
+                        <p class="produtos_valor"> R$: 25,00</p>
+                    </li>
+                    <li class="produtos_lista_itens">
+                        <h2 class="produtos_lista_titulo">Combo</h2>
+                        <img class="produtos_lista_imagens" src="./images/cabelo+barba.jpg" alt="Icone cabelo">
+                        <p class="produtos_descricao">Corte tradicional americano</p>
+                        <p class="produtos_valor"> R$: 25,00</p>
+                    </li>
+                </ul>
+            </section>
+        </main>
+        <footer class="footer">
+                <div class="footer_linha1">
+                    <div class="footer_coluna">
+                        <div class="footer_coluna_interna">
+                                <a href="index.html" class="header_titulo-imagem footer_logo">Pagina Inicial</a>
+                                <p class="footer_coluna_interna_texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi aperiam reprehenderit quia ducimus similique eius eos nostrum laudantium debitis quae ipsam, vero esse eveniet dicta qui aut illum, laboriosam aspernatur.</p>
+                        </div>
+                    </div>
+                    <div class="footer_coluna">
+                        <h2 class="footer_titulo">Contato</h2>
+                        <ul class="footer_lista">
+                            <div class="footer_div">
+                                <li class="footer_lista_itens">
+                                    <h3 class="footer_subtitulo">Endereço</h3>
+                                    <ul>
+                                        <li>Logradouro: Rua das barbas, 23</li>
+                                        <li>Bairro: Centro</li>
+                                        <li>Cidade: Joomla</li>
+                                    </ul>
+                                </li>
+                            </div>
+                            <div class="footer_div">
+                                <li class="footer_lista_itens">
+                                    <h3 class="footer_subtitulo">Telefone</h3>
+                                    <ul>
+                                        <li>Fixo: (11) XXXX-XXX</li>
+                                        <li>Celular(Claro): (XX) XXXX-XXXX</li>
+                                        <li>Celular(Vivo): (XX) XXXX-XXXX</li>
+                                    </ul>
+                                </li>
+                            </div>
+                            <li class="footer_lista_itens">
+        
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer_coluna">
+                            <h2 class="footer_titulo">Social</h2>
+                        <ul class="footer_lista">
+                            <li class="footer_lista_itens">
+                                <a href="https://instagram.com" target="_blank">Instagram</a> 
+                            </li>
+                            <li class="footer_lista_itens">
+                                    <a href="https://facebook.com" target="_blank">Facebook</a>
+                            </li>
+                            <li class="footer_lista_itens">
+                                    <a href="https://twitter.com" target="_blank">Twitter</a>
+                            </li>
+                        </ul>
+                        </div>
+                </div>
+                <div class="footer_linha2">
+                    <span class="footer_linha2_span">BarberShop 2019</span>
+                </div>
+            </footer>
+        <script src="js/jquery.js"></script>
+        <script src="js/menu.js"></script>
 </body>
 </html>

@@ -1,0 +1,134 @@
+@media(min-width:$breakpoint-xsm) and (max-width:$breakpoint-sm) {
+    .contato {
+        position: absolute;
+        padding: 12px;
+        left: 6px;
+        width: 90%;
+
+        &_main {
+            position: relative;
+            height: 750px;
+            top: 112px;
+            width: 100%;
+            padding-bottom: 10px;
+        }
+
+        &_formulario {
+            width: 90%;
+            padding: 15px;
+            border: 2px solid gray;
+            border-radius: 6px;
+            margin: 0 auto;
+        }
+
+        &_titulo {
+            color: gold;
+            font-size: 1.7em;
+            line-height: 1.5em;
+            font-weight: bold;
+            text-align: center;
+            padding-bottom: 10px;
+        }
+
+        &_input {
+            border-radius: 5px;
+            border: 1px solid black;
+            box-shadow: 1px 1px;
+            padding: 4px;
+            margin: 0 auto;
+            width: 98%;
+            margin-bottom: 25px;
+            transition: box-shadow 200ms ease-in-out;
+
+        }
+
+        &_label {
+            color: gold;
+            font-size: 1.1em;
+            line-height: 1.5em;
+        }
+
+        &_button {
+            border-radius: 5px;
+            background-color:forestgreen;
+            box-shadow: 1px 2px lightgray;
+            font-size: 1.1em;
+            width: 75px;
+            height: 35px;
+            text-align: center;
+            margin: 0 auto;
+            padding: 4px;
+            color:white;
+        }
+        &_input:focus{
+            box-shadow: 2px 2px lightblue;
+        }
+    }
+}
+@media(min-width:$breakpoint-sm_p1){
+    .contato {
+        position: absolute;
+        padding: 12px;
+        left: 6px;
+        width: 90%;
+
+        &_main {
+            position: relative;
+            height: 750px;
+            top: 112px;
+            width: 100%;
+            padding-bottom: 10px;
+        }
+
+        &_formulario {
+            width: 90%;
+            padding: 15px;
+            border: 2px solid gray;
+            border-radius: 6px;
+            margin: 0 auto;
+        }
+
+        &_titulo {
+            color: gold;
+            font-size: 1.7em;
+            line-height: 1.5em;
+            font-weight: bold;
+            text-align: center;
+            padding-bottom: 10px;
+        }
+
+        &_input {
+            border-radius: 5px;
+            border: 1px solid black;
+            box-shadow: 1px 1px;
+            padding: 4px;
+            margin: 0 auto;
+            width: 98%;
+            margin-bottom: 25px;
+            transition: box-shadow 200ms ease-in-out;
+
+        }
+
+        &_label {
+            color: gold;
+            font-size: 1.1em;
+            line-height: 1.5em;
+        }
+
+        &_button {
+            border-radius: 5px;
+            background-color:forestgreen;
+            box-shadow: 1px 2px lightgray;
+            font-size: 1.1em;
+            width: 75px;
+            height: 35px;
+            text-align: center;
+            margin: 0 auto;
+            padding: 4px;
+            color:white;
+        }
+        &_input:focus{
+            box-shadow: 2px 2px lightblue;
+        }
+    }
+}
