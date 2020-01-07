@@ -1,0 +1,85 @@
+@media(min-width:$breakpoint-xsm){
+    .titulo{
+        font-size: 2em;
+        color:$cor-titulo-black;
+        text-align: center;
+        padding:15px;
+        font-family: 'Space Mono', monospace;
+    }
+    .subtitulo{
+        font-size:1.3em;
+        font-family: 'Space Mono', monospace;
+        padding: 20px;
+        text-align: center;
+    }
+    .deficiencia_visual_titulo{
+        font-size:1.5em;
+        color:$cor-titulo-white;
+        font-family:arial;
+        text-align: center;
+        // &:before{
+        //     content: url("~/../../../imagens/Acessibilidade_Icone Cego Sozinho.png");
+        //     width: 50px;
+        //     height: 50px;
+        // }
+        // &:after{
+        //     content: url("~/../../../imagens/Acessibilidade_Icone Cego Sozinho.png");
+        //     width: 50px;
+        //     height: 50px;
+        // }
+       
+    }
+    .deficiencia_auditiva_titulo{
+            font-size:1.5em;
+            color:$cor-titulo-black;
+            font-family:arial;
+            text-align: center;
+    }
+    .transtorno_aprendizagem_titulo{
+        font-size:1.1em;
+        color:$cor-transtorno-aprendizagem-titulo;
+        font-family:arial;
+        text-align: center;
+    }
+    .deficiencia_visual_titulo_datonismo_tipo{
+        color:$cor-def-visual-titulo-dalt-tipo;
+        text-align: center;
+        font-size:1.5em;
+        font-family: 'Space Mono', monospace;
+        padding-top:20px;
+        padding-bottom:10px;
+    }
+    .deficiciencia_auditiva_titulo_video{
+        color:$cor-def-aud-titulo-video;
+        font-size:.8em;
+        font-family: 'Space Mono', cursive;
+        text-align: center;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    .deficiencia_intelectual_titulo_indicativo{
+        text-align: center;
+        color:$cor-titulo-white;
+        font-family: 'Mono Space',cursive;
+        font-size:1.4em;
+    }
+    .deficiencia_motora_titulo{
+        color:$cor-titulo-motora;
+        font-weight: bold;
+        font-family: 'Mono Space',cursive;
+        font-size:1.4em;
+        text-align:center;
+    }
+    .autismo_titulo{
+        color:$cor-titulo-autismo;
+        font-weight: bold;
+        font-family: 'Mono Space',cursive;
+        font-size:1.4em;
+        text-align:center;
+    }
+    .autismo_carousel{
+        color:$cor-titulo-black;
+        font-family: 'Mono Space', cursive;
+        font-size:1.8em;
+    }
+}

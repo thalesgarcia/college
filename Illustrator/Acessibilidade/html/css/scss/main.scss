@@ -1,0 +1,41 @@
+@import
+'abstracts/breakpoints.scss',
+'abstracts/colors.scss';
+
+@import
+'vendors/normalize.scss';
+
+@import
+'base/reset.scss',
+'base/typography.scss',
+'base/style.scss';
+
+
+@import
+'layout/header.scss',
+'layout/menu.scss';
+
+
+@import 
+'components/banner.scss',
+'components/titulos.scss',
+'components/imagens.scss',
+'components/texto.scss',
+'components/listas.scss',
+'components/links.scss';
+@import 
+'pages/acessibilidade.scss',
+'pages/deficiencia_visual.scss',
+'pages/deficiencia_auditiva.scss',
+'pages/deficiencia_intelectual.scss',
+'pages/deficiencia_motora.scss',
+'pages/autismo.scss',
+'pages/transtorno_aprendizagem.scss';
+
+// abstracts/
+// vendors/
+// base/
+// layout/
+// components/
+// pages/
+// themes/

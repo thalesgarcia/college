@@ -1,0 +1,1218 @@
+/*TEXTOS*/
+/*Listas*/
+/*Bordas*/
+/*Gradientes*/
+/*shadows*/
+/*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0; }
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */ }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent; }
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */ }
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder; }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -0.25em; }
+
+sup {
+  top: -0.5em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */ }
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible; }
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none; }
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button; }
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em; }
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */ }
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline; }
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto; }
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */ }
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */ }
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block; }
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item; }
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none; }
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none; }
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@font-face {
+  font-family: 'Ultra', serif;
+  src: url("https://fonts.googleapis.com/css?family=Ultra&display=swap"); }
+@font-face {
+  font-family: 'Concert One', cursive;
+  font-family: 'Space Mono', monospace;
+  font-family: 'Asul', sans-serif;
+  src: url("https://fonts.googleapis.com/css?family=Asul|Concert+One|Space+Mono&display=swap"); }
+.main {
+  background-color: white;
+  height: auto;
+  width: 100%;
+  position: relative;
+  top: 82px; }
+
+@media (min-width: 320px) {
+  .header {
+    background-color: #dedede;
+    height: 80px;
+    width: 100%;
+    padding-top: 15px;
+    box-shadow: 0 0 7px gray;
+    z-index: 999;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center; }
+
+  .header_titulo {
+    font-weight: bolder;
+    font-size: 1em;
+    content: none;
+    width: 50px; }
+
+  .header_titulo-imagem {
+    width: 100%;
+    cursor: pointer;
+    text-indent: -9999px; } }
+@media (min-width: 481px) {
+  .header {
+    background-color: #dedede;
+    height: 80px;
+    width: 100%;
+    padding: 15px;
+    box-shadow: 0 0 7px gray;
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    align-content: center; }
+    .header_titulo {
+      position: relative;
+      top: 10px;
+      width: 15%; } }
+@media (min-width: 320px) and (max-width: 480px) {
+  .menu-principal_btn {
+    display: block;
+    width: 50px;
+    height: 50px;
+    text-indent: -9999px;
+    background-color: #ffffff;
+    border-color: gray;
+    border-radius: 5px;
+    border-style: solid;
+    background-image: url("~/../../../imagens/menuprincipal-btn-bg.png");
+    background-repeat: no-repeat;
+    background-position: -46px 6px;
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 2; }
+  .menu-principal_lista {
+    padding: 0;
+    position: absolute;
+    top: 78px;
+    right: 0px;
+    width: 100%;
+    background-color: black;
+    border-radius: 5px;
+    height: auto;
+    transition: width 300ms ease-in-out, top 300ms ease-in, height 300ms ease-in;
+    z-index: 1; }
+  .menu-principal-closed .menu-principal_btn {
+    background-position: 5px 6px; }
+  .menu-principal-closed .menu-principal_lista {
+    margin: 0;
+    top: -999999px; }
+  .menu-principal-closed .menu-principal_lista-itens {
+    margin: 0;
+    height: 0;
+    overflow: hidden;
+    font-family: 'Concert One', cursive; }
+
+  .menu-principal_lista li {
+    list-style: none; }
+
+  .menu-principal_lista-itens {
+    display: block;
+    margin-bottom: 1.4em;
+    padding-left: 14px;
+    padding-bottom: 0px;
+    padding-top: 12px;
+    margin-top: 5px;
+    font-family: 'Concert One', cursive; }
+
+  .menu-principal_lista-itens:first-child {
+    border: hidden; }
+
+  .menu-principal_lista-itens a {
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    font-size: 1em; }
+
+  .menu-principal_lista-itens--active a {
+    color: red; }
+
+  .menu-principal_lista-itens a:hover {
+    color: gray; }
+
+  .active_menu::after {
+    content: "";
+    display: block;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.4); } }
+@media (min-width: 481px) {
+  .menu-principal {
+    position: relative;
+    top: -30%; }
+    .menu-principal_btn {
+      display: none; }
+    .menu-principal_lista {
+      color: white;
+      text-decoration: none;
+      text-transform: uppercase;
+      list-style: none;
+      display: -webkit-inline-box !important;
+      display: inline-block; }
+      .menu-principal_lista-itens {
+        padding: 15px; }
+        .menu-principal_lista-itens a {
+          text-decoration: none; }
+        .menu-principal_lista-itens a:hover {
+          color: orange; }
+      .menu-principal_lista-itens:hover {
+        color: yellow; } }
+@media (min-width: 320px) {
+  .banner_img {
+    height: 39px;
+    width: 45px;
+    display: inline-flex;
+    display: -webkit-inline-box;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: flex-start;
+    padding-top: 2px;
+    padding-left: 6px; }
+  .banner_topo {
+    height: 143px;
+    width: 100%;
+    background-image: radial-gradient(#ffffff 1%, black 80%);
+    display: flex; }
+  .banner_imgs_left {
+    height: 70px;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: space-between;
+    padding-top: 3px; }
+  .banner_imgs_right {
+    height: 70px;
+    width: 100%;
+    padding-top: 3px; }
+  .banner_titulo {
+    color: black;
+    font-size: 1.5em;
+    text-align: center;
+    padding-top: 53px;
+    margin-left: 20px;
+    margin-right: 22px; } }
+@media (min-width: 320px) {
+  .titulo {
+    font-size: 2em;
+    color: black;
+    text-align: center;
+    padding: 15px;
+    font-family: 'Space Mono', monospace; }
+
+  .subtitulo {
+    font-size: 1.3em;
+    font-family: 'Space Mono', monospace;
+    padding: 20px;
+    text-align: center; }
+
+  .deficiencia_visual_titulo {
+    font-size: 1.5em;
+    color: #ffffff;
+    font-family: arial;
+    text-align: center; }
+
+  .deficiencia_auditiva_titulo {
+    font-size: 1.5em;
+    color: black;
+    font-family: arial;
+    text-align: center; }
+
+  .transtorno_aprendizagem_titulo {
+    font-size: 1.1em;
+    color: #ED6E2E;
+    font-family: arial;
+    text-align: center; }
+
+  .deficiencia_visual_titulo_datonismo_tipo {
+    color: red;
+    text-align: center;
+    font-size: 1.5em;
+    font-family: 'Space Mono', monospace;
+    padding-top: 20px;
+    padding-bottom: 10px; }
+
+  .deficiciencia_auditiva_titulo_video {
+    color: darkgreen;
+    font-size: .8em;
+    font-family: 'Space Mono', cursive;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px; }
+
+  .deficiencia_intelectual_titulo_indicativo {
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Mono Space',cursive;
+    font-size: 1.4em; }
+
+  .deficiencia_motora_titulo {
+    color: #E2B759;
+    font-weight: bold;
+    font-family: 'Mono Space',cursive;
+    font-size: 1.4em;
+    text-align: center; }
+
+  .autismo_titulo {
+    color: #FF7BAC;
+    font-weight: bold;
+    font-family: 'Mono Space',cursive;
+    font-size: 1.4em;
+    text-align: center; }
+
+  .autismo_carousel {
+    color: black;
+    font-family: 'Mono Space', cursive;
+    font-size: 1.8em; } }
+@media (min-width: 320px) {
+  .icone {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center; }
+    .icone_acessibilidade-web {
+      height: 40px;
+      width: 110px;
+      margin: 0 auto;
+      padding: 20px; }
+
+  .deficiencia_visual_imagem_daltonismo {
+    width: 410px;
+    padding: 20px; }
+  .deficiencia_visual_imagem_titulo {
+    height: 180px;
+    width: 410px;
+    padding: 30px; }
+
+  .deficiencia_visual_daltonismo_imagem {
+    height: 80px;
+    width: 95px;
+    padding: 0; }
+    .deficiencia_visual_daltonismo_imagem_left {
+      padding-left: 20px; }
+    .deficiencia_visual_daltonismo_imagem_right {
+      padding-right: 20px; }
+
+  .deficiencia_intelectual_imagem {
+    height: 430px;
+    width: 333px;
+    margin: 0 auto;
+    padding: 15px;
+    align-content: center;
+    display: flex; }
+
+  .transtorno_aprendizagem_imagem {
+    height: 80px;
+    width: 95px;
+    padding: 0; }
+    .transtorno_aprendizagem_imagem_left {
+      padding-left: 20px; }
+    .transtorno_aprendizagem_imagem_right {
+      padding-right: 20px; }
+    .transtorno_aprendizagem_imagem_tdah {
+      object-fit: cover;
+      object-position: 90%; }
+
+  .deficiencia_motora_icone_wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center; }
+
+  .deficiencia_motora_icone {
+    width: 55px;
+    height: 90px;
+    padding-left: 5px;
+    padding-top: 15px;
+    padding-bottom: 15px; }
+
+  .deficiencia_motora_imagem {
+    height: 80px;
+    width: 95px;
+    padding: 0; }
+    .deficiencia_motora_imagem_left {
+      padding-left: 20px;
+      height: 104px;
+      object-fit: cover;
+      object-position: 130%;
+      width: 116px; }
+    .deficiencia_motora_imagem_left_second {
+      padding-left: 20px;
+      height: 104px;
+      width: 105px; }
+    .deficiencia_motora_imagem_left_third {
+      padding-left: 20px;
+      height: 104px;
+      width: 110px; }
+    .deficiencia_motora_imagem_right {
+      padding-right: 20px;
+      height: 107px !important; }
+    .deficiencia_motora_imagem_right_second {
+      padding-right: 20px;
+      width: 115px;
+      height: 90px; }
+    .deficiencia_motora_imagem_ela {
+      margin: 0 auto;
+      width: 400px;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 30px;
+      padding-bottom: 20px; }
+
+  .autismo_imagem_fundo {
+    width: 414px; }
+
+  .autismo_imagem_carousel {
+    object-fit: fill;
+    object-position: 0 60%;
+    height: 450px; } }
+@media (min-width: 320px) {
+  .paragrafo {
+    text-align: justify;
+    font-size: .9em;
+    color: gray;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-bottom: 10px; }
+    .paragrafo_span_alert {
+      color: #D30918; }
+      .paragrafo_span_alert_upper {
+        text-transform: uppercase; }
+    .paragrafo_span_alert_second {
+      color: red; }
+    .paragrafo_span_success {
+      color: #00C437; }
+      .paragrafo_span_success_auditivo {
+        font-size: 1.3em !important; }
+    .paragrafo_span_warning {
+      color: #EF8F11;
+      text-transform: uppercase; }
+    .paragrafo_span_info {
+      color: #3FA9F5; }
+      .paragrafo_span_info_upper {
+        text-transform: uppercase; }
+    .paragrafo_span_secondary {
+      color: #E6E6E6; }
+      .paragrafo_span_secondary_upper {
+        text-transform: uppercase; }
+
+  .paragrafo_black {
+    color: black !important;
+    font-size: 1em;
+    text-align: justify;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-bottom: 10px; }
+
+  .quote {
+    border-left: 4px gray solid;
+    padding-left: 15px;
+    margin-left: 30px;
+    padding-right: 25px;
+    color: lightgray;
+    font-size: 1em;
+    font-style: italic;
+    padding-bottom: 9px;
+    margin-bottom: 15px;
+    text-align: justify; }
+    .quote_fonte {
+      color: red;
+      font-size: .8em;
+      font-style: italic;
+      float: right;
+      padding-top: 5px;
+      padding-right: 5px;
+      padding-bottom: 19px; }
+
+  .paragrafo_imagem_def_visual {
+    font-size: 1em;
+    text-align: center; }
+    .paragrafo_imagem_def_visual_right {
+      margin-left: 105px;
+      margin-top: -51px; }
+    .paragrafo_imagem_def_visual_right_second {
+      margin-top: -103px;
+      margin-left: 105px;
+      text-align: justify;
+      padding-right: 15px;
+      padding-left: 12px; }
+    .paragrafo_imagem_def_visual_right_third {
+      margin-top: -65px;
+      margin-left: 105px;
+      text-align: justify;
+      padding-right: 15px;
+      padding-left: 12px; }
+    .paragrafo_imagem_def_visual_left {
+      margin-right: 100px;
+      text-align: justify;
+      padding-left: 15px;
+      padding-right: 12px;
+      margin-top: -250px; }
+    .paragrafo_imagem_def_visual_left_second {
+      margin-top: -135px;
+      margin-right: 105px;
+      text-align: justify;
+      padding-right: 15px;
+      padding-left: 12px; }
+    .paragrafo_imagem_def_visual_left_third {
+      margin-top: -75px;
+      margin-right: 105px;
+      text-align: justify;
+      padding-right: 15px;
+      padding-left: 12px; }
+
+  .paragrafo_imagem_transtorno_aprendizagem {
+    font-size: 1em;
+    text-align: center; }
+    .paragrafo_imagem_transtorno_aprendizagem_right {
+      margin-left: 105px;
+      margin-top: -51px; }
+    .paragrafo_imagem_transtorno_aprendizagem_right_second {
+      margin-top: -91px;
+      margin-left: 104px;
+      text-align: justify;
+      padding-right: 15px;
+      padding-left: 12px; }
+    .paragrafo_imagem_transtorno_aprendizagem_right_third {
+      text-align: justify;
+      padding-right: 15px;
+      padding-left: 12px;
+      margin-left: 101px;
+      margin-top: -128px; }
+    .paragrafo_imagem_transtorno_aprendizagem_left {
+      margin-right: 100px;
+      text-align: justify;
+      padding-left: 15px;
+      padding-right: 12px;
+      margin-top: -107px; }
+    .paragrafo_imagem_transtorno_aprendizagem_left_second {
+      margin-top: -145px;
+      padding-left: 15px;
+      padding-right: 12px;
+      margin-right: 100px;
+      text-align: justify; }
+
+  .paragrafo_imagem_def_motora {
+    font-size: 1em;
+    text-align: center; }
+    .paragrafo_imagem_def_motora_right {
+      margin-left: 105px;
+      margin-top: -51px; }
+    .paragrafo_imagem_def_motora_right_second {
+      margin-top: -122px;
+      margin-left: 104px;
+      text-align: justify;
+      padding-right: 15px;
+      padding-left: 20px; }
+    .paragrafo_imagem_def_motora_right_third {
+      margin-top: -145px;
+      margin-left: 104px;
+      text-align: justify;
+      padding-right: 15px;
+      padding-left: 20px; }
+    .paragrafo_imagem_def_motora_left {
+      margin-right: 100px;
+      text-align: justify;
+      padding-left: 15px;
+      padding-right: 12px;
+      margin-top: -107px; }
+    .paragrafo_imagem_def_motora_left_second {
+      margin-top: -128px;
+      padding-left: 15px;
+      padding-right: 25px;
+      margin-right: 100px;
+      text-align: justify; }
+    .paragrafo_imagem_def_motora_left_third {
+      margin-top: -95px;
+      padding-left: 15px;
+      padding-right: 25px;
+      margin-right: 100px;
+      text-align: justify; } }
+@media (min-width: 320px) {
+  .lista_acessibilidade {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-start;
+    background-color: #ffffff;
+    padding: 15px; }
+    .lista_acessibilidade_itens {
+      color: gray;
+      font-size: .9em;
+      font-family: 'Concert One', cursive;
+      padding-bottom: 10px;
+      text-align: justify;
+      line-height: 1.2em; }
+      .lista_acessibilidade_itens:before {
+        content: '-';
+        padding-right: 2px; }
+      .lista_acessibilidade_itens_last {
+        padding: 0;
+        margin-left: -275px; }
+    .lista_acessibilidade_item_titulo {
+      color: blue;
+      font-size: 1em;
+      font-family: 'Concert One', cursive; }
+
+  .lista_daltonismo {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-start;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 35px; }
+    .lista_daltonismo_item_titulo {
+      color: #E80C41;
+      text-transform: uppercase; }
+    .lista_daltonismo_success {
+      color: #0EE57F; }
+    .lista_daltonismo_info {
+      color: #228FF2; }
+    .lista_daltonismo_warning {
+      color: #FFF061; }
+
+  .lista_surdez_total {
+    padding-left: 30px;
+    padding-right: 15px; }
+    .lista_surdez_total_item {
+      color: green;
+      text-align: center;
+      padding-top: 15px; }
+      .lista_surdez_total_item-lista_interna {
+        padding-top: 15px;
+        padding-bottom: 10px; }
+        .lista_surdez_total_item-lista_interna-item {
+          color: gray;
+          text-align: justify;
+          padding-left: 10px;
+          padding-right: 15px; } }
+@media (min-width: 320px) {
+  .link_externo {
+    color: red;
+    font-size: 1.2em;
+    font-family: 'Concert One', cursive; } }
+@media (min-width: 320px) {
+  .acessibilidade {
+    background-color: #ffffff;
+    height: auto;
+    width: 100%;
+    padding-bottom: 30px;
+    padding-top: 10px; } }
+@media (min-width: 320px) {
+  .deficiencia_visual {
+    background-color: #DBDBDB;
+    height: auto;
+    width: 100%;
+    padding-bottom: 30px;
+    padding-top: 10px; }
+    .deficiencia_visual_wrapper {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+      align-content: flex-start;
+      padding: 30px; }
+
+  .icone_deficiencia_visual {
+    height: 40px;
+    width: 40px;
+    margin: 0 auto; }
+    .icone_deficiencia_visual_rotate {
+      transform: rotateY(180deg); }
+
+  .deficiencia_visual_daltonismo_wrapper_left {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: center;
+    padding-bottom: 20px; }
+    .deficiencia_visual_daltonismo_wrapper_left_spacing {
+      padding-top: 55px; }
+    .deficiencia_visual_daltonismo_wrapper_left_spacing_second {
+      padding-top: 40px; }
+    .deficiencia_visual_daltonismo_wrapper_left_spacing_third {
+      padding-top: 65px; }
+
+  .deficiencia_visual_daltonismo_wrapper_right {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: flex-end;
+    align-content: center; }
+    .deficiencia_visual_daltonismo_wrapper_right_spacing {
+      padding-top: 190px; }
+    .deficiencia_visual_daltonismo_wrapper_right_spacing_second {
+      padding-top: 80px !important; }
+    .deficiencia_visual_daltonismo_wrapper_right_spacing_third {
+      padding-top: 20px; } }
+@media (min-width: 320px) {
+  .deficiencia_auditiva {
+    background-color: #ffffff;
+    height: auto;
+    width: 100%;
+    padding-bottom: 30px;
+    padding-top: 10px; }
+    .deficiencia_auditiva_wrapper {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+      align-content: flex-start;
+      padding: 30px; }
+    .deficiencia_auditiva_video {
+      height: 215px;
+      width: 395px;
+      padding-left: 30px;
+      padding-right: 10px;
+      padding-bottom: 15px; }
+
+  .icone_deficiencia_auditiva {
+    height: 40px;
+    width: 40px;
+    margin: 0 auto; }
+    .icone_deficiencia_auditiva_rotate {
+      transform: rotateY(180deg); } }
+@media (min-width: 320px) {
+  .deficiencia_intelectual {
+    background-color: #DBDBDB;
+    height: auto;
+    width: 100%;
+    padding-bottom: 30px;
+    padding-top: 10px; }
+    .deficiencia_intelectual_wrapper {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+      align-content: flex-start;
+      padding: 30px; }
+    .deficiencia_intelectual_video {
+      height: 215px;
+      width: 395px;
+      padding-left: 30px;
+      padding-right: 10px;
+      padding-bottom: 15px; }
+    .deficiencia_intelectual_buttons {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      align-content: center;
+      padding: 10px; }
+    .deficiencia_intelectual_btn {
+      border-radius: 5px;
+      border: 1px solid black;
+      font-size: .9em;
+      text-align: center;
+      height: 47px;
+      padding-top: 7px;
+      margin-left: 5px;
+      padding-bottom: 4px;
+      cursor: pointer;
+      background-color: white;
+      color: black; }
+
+  .icone_deficiencia_intelectual {
+    height: 40px;
+    width: 40px;
+    margin: 0 auto; }
+    .icone_deficiencia_intelectual_rotate {
+      transform: rotateY(180deg); } }
+@media (min-width: 320px) {
+  .deficiencia_motora {
+    background-color: #DBDBDB;
+    height: auto;
+    width: 100%;
+    padding-bottom: 30px;
+    padding-top: 30px; }
+    .deficiencia_motora_wrapper {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+      align-content: flex-start;
+      padding-right: 10px;
+      padding-left: 10px;
+      padding-bottom: 30px; }
+      .deficiencia_motora_wrapper_right {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        align-items: flex-end;
+        align-content: center; }
+        .deficiencia_motora_wrapper_right_spacing {
+          padding-top: 30px; }
+        .deficiencia_motora_wrapper_right_spacing_second {
+          padding-top: 55px; }
+        .deficiencia_motora_wrapper_right_spacing_third {
+          padding-top: 17px; }
+      .deficiencia_motora_wrapper_left {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        align-content: center;
+        padding-bottom: 20px; }
+        .deficiencia_motora_wrapper_left_spacing {
+          padding-top: 65px; }
+        .deficiencia_motora_wrapper_left_spacing_second {
+          padding-top: 20px; }
+        .deficiencia_motora_wrapper_left_spacing_third {
+          padding-top: 49px; }
+
+  .icone_deficiencia_motora {
+    height: 40px;
+    width: 40px;
+    margin: 0 auto; }
+    .icone_deficiencia_motora_rotate {
+      transform: rotateY(180deg); } }
+@media (min-width: 320px) {
+  .autismo {
+    background-color: #ffffff;
+    height: auto;
+    width: 100%; }
+    .autismo_wrapper {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+      align-content: flex-start;
+      padding-right: 10px;
+      padding-left: 10px;
+      padding-bottom: 30px;
+      margin-top: -25px; } }
+@media (min-width: 320px) {
+  .icone_transtorno_aprendizagem {
+    height: 40px;
+    width: 40px;
+    margin: 0 auto; }
+    .icone_transtorno_aprendizagem_rotate {
+      transform: rotateY(180deg); }
+
+  .transtorno_aprendizagem {
+    background-color: #ffffff;
+    height: auto;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 30px; }
+    .transtorno_aprendizagem_wrapper {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+      align-content: flex-start;
+      padding: 30px; }
+      .transtorno_aprendizagem_wrapper_right {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        align-items: flex-end;
+        align-content: center; }
+        .transtorno_aprendizagem_wrapper_right_spacing {
+          padding-top: 65px; }
+        .transtorno_aprendizagem_wrapper_right_spacing_second {
+          padding-top: 89px; }
+      .transtorno_aprendizagem_wrapper_left {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        align-content: center;
+        padding-bottom: 20px; }
+        .transtorno_aprendizagem_wrapper_left_spacing {
+          padding-top: 65px; }
+        .transtorno_aprendizagem_wrapper_left_spacing_second {
+          padding-top: 90px; }
+      .transtorno_aprendizagem_wrapper_span_dislexia {
+        color: #662483;
+        font-size: 1.1em; }
+      .transtorno_aprendizagem_wrapper_span_discalculia {
+        color: #FC24FC;
+        font-size: 1.1em; }
+      .transtorno_aprendizagem_wrapper_span_disgrafia {
+        color: #E3ED18;
+        font-size: 1.1em; }
+      .transtorno_aprendizagem_wrapper_span_tdah {
+        color: #FC9706;
+        font-size: 1.1em; } }
+
+/*# sourceMappingURL=style.css.map */

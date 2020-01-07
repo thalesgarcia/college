@@ -1,0 +1,50 @@
+@media(min-width:$breakpoint-xsm){
+    .banner{
+&_img{
+    height: 39px;
+    width: 45px;
+    display: inline-flex;
+    display: -webkit-inline-box;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: center;
+    align-content: flex-start;
+    padding-top: 2px;
+    padding-left: 6px;
+}
+        &_topo{
+            height: 143px;
+            width: 100%;
+            background-image: radial-gradient( $cor-banner-gradiente-1 1%, $cor-banner-gradiente-2 80%);
+            display: flex;
+            
+        }
+        &_imgs{
+            &_left{
+                height: 70px;
+                width: 100%;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-items: flex-start;
+                align-content: space-between;
+                padding-top: 3px;
+            }
+            &_right{
+                height: 70px;
+                width: 100%;
+                padding-top: 3px;
+            }
+        }
+        &_titulo{
+            color:$cor-titulo-black;
+            font-size: 1.5em;
+            text-align: center;
+            padding-top: 53px;
+            margin-left:20px;
+            margin-right:22px;
+        }
+    }
+    
+}

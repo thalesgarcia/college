@@ -1,0 +1,56 @@
+@media(min-width:$breakpoint-xsm) {
+    .deficiencia_intelectual{
+        background-color: $cor-fundo;
+        height: auto;
+        width:100%;
+        padding-bottom: 30px;
+        padding-top: 10px;
+        &_wrapper{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            align-content: flex-start;
+            padding:30px;
+        }
+        &_video{
+            height: 215px;
+            width: 395px;
+            padding-left: 30px;
+            padding-right: 10px;
+            padding-bottom:15px;
+        }
+        &_buttons{
+            display: flex;
+	flex-direction: row;
+	// flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+    align-content: center;
+    padding:10px;
+        }
+        &_btn{
+            border-radius: 5px;
+            border: 1px solid $cor-borda-btn-def-intelectual;
+            font-size: .9em;
+            text-align: center;
+            height: 47px;
+            padding-top: 7px;
+            margin-left: 5px;
+            padding-bottom: 4px;
+            cursor: pointer;
+            background-color: white;
+            color:black;
+        }
+        
+    }
+    .icone_deficiencia_intelectual{
+        height: 40px;
+            width: 40px;
+            margin:0 auto;
+            &_rotate{
+                transform: rotateY(180deg);
+            }
+    }
+}

@@ -1,0 +1,86 @@
+@media(min-width:$breakpoint-xsm) {
+    .lista_acessibilidade {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        align-content: flex-start;
+        background-color: $cor-fundo-branca;
+        padding: 15px;
+
+        &_itens {
+            color: $cor-lista-item;
+            font-size: .9em;
+            font-family: 'Concert One', cursive;
+            padding-bottom: 10px;
+            text-align: justify;
+            line-height: 1.2em;
+
+            &:before {
+                content: '-';
+                padding-right: 2px;
+            }
+
+            &_last {
+                padding: 0;
+                margin-left: -275px;
+            }
+        }
+
+        &_item_titulo {
+            color: $cor-lista-item-titulo;
+            font-size: 1em;
+            font-family: 'Concert One', cursive;
+
+        }
+    }
+    .lista_daltonismo{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        align-content: flex-start;
+        padding-top: 15px;
+
+padding-bottom: 15px;
+
+padding-left: 35px;
+        &_item{
+            &_titulo{
+                color:$cor-lista-daltonismo-item;
+                text-transform: uppercase;
+            }
+        }
+        &_success{
+            color:$cor-lista-item-success;
+        }
+        &_info{
+            color:$cor-lista-item-info;
+        }
+        &_warning{
+            color:$cor-lista-item-warning;
+        }
+    }
+    .lista_surdez_total{
+        padding-left: 30px;
+        padding-right: 15px;
+        &_item{
+            color: $cor-lista-sudez-total;
+            text-align: center;
+            padding-top:15px;
+            &-lista_interna{
+                padding-top: 15px;
+                padding-bottom: 10px;
+                &-item{
+                    color:$cor-lista-item;
+                    text-align: justify;
+                    padding-left: 10px;
+                    padding-right: 15px;
+                }
+            }
+        }
+    }
+
+}

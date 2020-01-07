@@ -1,0 +1,19 @@
+@media(min-width:$breakpoint-xsm) {
+    .autismo{
+        background-color: $cor-fundo-branca;
+        height: auto;
+        width:100%;
+        &_wrapper{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            align-content: flex-start;
+            padding-right: 10px;
+            padding-left:10px;
+            padding-bottom:30px;
+            margin-top:-25px
+        }
+    }
+}

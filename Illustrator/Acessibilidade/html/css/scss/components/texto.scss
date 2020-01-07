@@ -1,0 +1,221 @@
+@media(min-width:$breakpoint-xsm) {
+    .paragrafo {
+        text-align: justify;
+        font-size: .9em;
+        color: $cor-paragrafo-secundario;
+        padding-right: 15px;
+        padding-left: 15px;
+        padding-bottom: 10px;
+
+        &_span_alert {
+            color: $cor-paragrafo-span-alert ;
+            &_upper{
+                text-transform: uppercase;
+            }
+        }
+        &_span_alert_second{
+            color:$cor-paragrafo-span-alert_second;
+        }
+
+        &_span_success {
+            color: $cor-paragrafo-span-success;
+            &_auditivo{
+                font-size:1.3em !important;
+            }
+        }
+        &_span_warning{
+            color:$cor-paragrafo-span-warning;
+            text-transform: uppercase;
+        }
+        &_span_info{
+            color: $cor-paragrafo-span-info;
+            &_upper{
+                text-transform: uppercase;
+            }
+        }
+        &_span_secondary{
+            color:$cor-paragrafo-span-second;
+            &_upper{
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    .paragrafo_black {
+        color: $cor-titulo-black !important;
+        font-size: 1em;
+        text-align: justify;
+        padding-right: 15px;
+        padding-left: 15px;
+        padding-bottom: 10px;
+    }
+
+    .quote {
+        border-left: 4px $cor-borda-quote solid;
+        padding-left: 15px;
+        margin-left: 30px;
+        padding-right: 25px;
+        color: $cor-quote;
+        font-size: 1em;
+        font-style: italic;
+        padding-bottom: 9px;
+        margin-bottom: 15px;
+        text-align: justify;
+
+        &_fonte {
+            color: $cor-fonte-quote;
+            font-size: .8em;
+            font-style: italic;
+            float: right;
+            padding-top: 5px;
+            padding-right: 5px;
+            padding-bottom: 19px;
+        }
+
+
+    }
+
+    .paragrafo_imagem_def_visual {
+        font-size: 1em;
+        text-align: center;
+
+        &_right {
+            margin-left: 105px;
+            margin-top: -51px;
+
+        }
+        &_right_second{
+            margin-top: -103px;
+
+            margin-left: 105px;
+            
+            text-align: justify;
+            
+            padding-right: 15px;
+            
+            padding-left: 12px
+        }
+        &_right_third{
+            margin-top: -65px;
+
+            margin-left: 105px;
+            
+            text-align: justify;
+            
+            padding-right: 15px;
+            
+            padding-left: 12px
+        }
+
+        &_left {
+            margin-right: 100px;
+            text-align: justify;
+            padding-left: 15px;
+            padding-right: 12px;
+            margin-top: -250px;
+        }
+        &_left_second{
+            margin-top: -135px;
+
+            margin-right: 105px;
+            
+            text-align: justify;
+            
+            padding-right: 15px;
+            
+            padding-left: 12px
+        }
+        &_left_third{
+            margin-top: -75px;
+
+            margin-right: 105px;
+            
+            text-align: justify;
+            
+            padding-right: 15px;
+            
+            padding-left: 12px
+        }
+
+    }
+    .paragrafo_imagem_transtorno_aprendizagem {
+        font-size: 1em;
+        text-align: center;
+
+        &_right {
+            margin-left: 105px;
+            margin-top: -51px;
+        }
+        &_right_second{
+            margin-top: -91px;
+            margin-left: 104px;
+            text-align: justify;
+            padding-right: 15px;
+            padding-left: 12px;
+        }
+        &_right_third{
+            text-align: justify;
+            padding-right: 15px;
+            padding-left: 12px;
+            margin-left: 101px;
+            margin-top: -128px;
+        }
+        &_left {
+            margin-right: 100px;
+            text-align: justify;
+            padding-left: 15px;
+            padding-right: 12px;
+            margin-top: -107px;
+        }
+        &_left_second{
+            margin-top: -145px;
+            padding-left: 15px;
+            padding-right: 12px;
+            margin-right: 100px;
+            text-align:justify;
+        }
+    }
+    .paragrafo_imagem_def_motora{
+        font-size: 1em;
+        text-align: center;
+        &_right {
+            margin-left: 105px;
+            margin-top: -51px;
+        }
+        &_right_second{
+            margin-top: -122px;
+            margin-left: 104px;
+            text-align: justify;
+            padding-right: 15px;
+            padding-left: 20px;
+        }
+        &_right_third{
+            margin-top: -145px;
+            margin-left: 104px;
+            text-align: justify;
+            padding-right: 15px;
+            padding-left: 20px;
+        }
+        &_left {
+            margin-right: 100px;
+            text-align: justify;
+            padding-left: 15px;
+            padding-right: 12px;
+            margin-top: -107px;
+        }
+        &_left_second{
+            margin-top: -128px;
+            padding-left: 15px;
+            padding-right: 25px;
+            margin-right: 100px;
+            text-align:justify;
+        }
+        &_left_third{
+            margin-top: -95px;
+            padding-left: 15px;
+            padding-right: 25px;
+            margin-right: 100px;
+            text-align:justify;
+        }
+    }
+}

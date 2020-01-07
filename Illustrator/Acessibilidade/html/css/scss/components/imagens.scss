@@ -1,0 +1,130 @@
+@media(min-width:$breakpoint-xsm){
+    .icone{
+        display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+        &_acessibilidade-web{
+            height: 40px;
+            width: 110px;
+            margin:0 auto;
+            padding:20px
+        }
+    }
+    .deficiencia_visual_imagem{
+        &_daltonismo{
+            width: 410px;
+            padding:20px;
+        }
+        &_titulo{
+            height: 180px;
+            width: 410px;
+            padding:30px;
+        }
+    }
+    .deficiencia_visual_daltonismo_imagem{
+                height: 80px;
+                width: 95px;
+                padding:0;
+                
+        &_left{
+            padding-left:20px;
+
+        }
+        &_right{
+            padding-right:20px;
+        }
+    }
+    .deficiencia_intelectual_imagem{
+        height: 430px;
+        width: 333px;
+        margin: 0 auto;
+        padding: 15px;
+        align-content: center;
+        display: flex;
+    }
+    .transtorno_aprendizagem_imagem{
+        height: 80px;
+                width: 95px;
+        padding:0;
+        
+        &_left{
+            padding-left:20px;
+
+        }
+        &_right{
+            padding-right:20px;
+        }
+        &_tdah{
+            object-fit: cover;
+            object-position: 90%;
+        }
+    }
+
+    .deficiencia_motora_icone_wrapper{
+        display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+    }
+    .deficiencia_motora_icone{
+        width: 55px;
+        height: 90px;
+        padding-left:5px;
+        padding-top:15px;
+        padding-bottom:15px;
+    }
+    .deficiencia_motora_imagem{
+        height: 80px;
+        width: 95px;
+        padding:0;
+        
+        &_left{
+            padding-left: 20px;
+            height: 104px;
+            object-fit: cover;
+            object-position: 130%;
+            width: 116px;
+            
+        }
+        &_left_second{
+            padding-left: 20px;
+            height: 104px;
+            width: 105px;
+        }
+        &_left_third{
+            padding-left: 20px;
+            height: 104px;
+            width: 110px;
+        }
+        &_right{
+            padding-right:20px;
+            height: 107px !important;
+        }
+        &_right_second{
+            padding-right:20px;
+            width:115px;
+            height: 90px;
+        }
+        &_ela{
+            margin: 0 auto;
+            width: 400px;
+            padding-left: 50px;
+            padding-right: 50px;
+            padding-top: 30px;
+            padding-bottom: 20px;
+        }
+    }
+    .autismo_imagem_fundo{
+        width:414px;
+    }
+    .autismo_imagem_carousel{
+        object-fit: fill;
+    object-position: 0 60%;
+    height:450px;
+    }
+}

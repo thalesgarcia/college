@@ -1,0 +1,65 @@
+@media(min-width:$breakpoint-xsm) {
+    .deficiencia_motora{
+        background-color: $cor-fundo;
+        height: auto;
+        width:100%;
+        padding-bottom: 30px;
+        padding-top: 30px;
+        &_wrapper{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            align-content: flex-start;
+            padding-right: 10px;
+            padding-left:10px;
+            padding-bottom:30px;
+            &_right{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: flex-end;
+                align-items: flex-end;
+                align-content: center;
+                &_spacing{
+                    padding-top:30px;
+                }
+                &_spacing_second{
+                    padding-top:55px;
+                }
+                &_spacing_third{
+                    padding-top: 17px;
+                }
+            }
+            &_left{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+                align-items: flex-start;
+                align-content: center;
+                padding-bottom:20px;
+                &_spacing{
+                    padding-top:65px;
+                }
+                &_spacing_second{
+                    padding-top:20px;
+                }
+                &_spacing_third{
+                    padding-top:49px;
+                }
+            }
+        }
+        
+    }
+    .icone_deficiencia_motora{
+        height: 40px;
+            width: 40px;
+            margin:0 auto;
+            &_rotate{
+                transform: rotateY(180deg);
+            }
+    }
+
+}

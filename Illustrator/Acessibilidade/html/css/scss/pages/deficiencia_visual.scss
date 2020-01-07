@@ -1,0 +1,62 @@
+@media(min-width:$breakpoint-xsm) {
+    .deficiencia_visual{
+        background-color: $cor-fundo;
+        height: auto;
+        width:100%;
+        padding-bottom: 30px;
+        padding-top: 10px;
+        &_wrapper{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            align-content: flex-start;
+            padding:30px;
+        }
+        
+    }
+    .icone_deficiencia_visual{
+        height: 40px;
+            width: 40px;
+            margin:0 auto;
+            &_rotate{
+                transform: rotateY(180deg);
+            }
+    }
+    .deficiencia_visual_daltonismo_wrapper_left{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        align-content: center;
+        padding-bottom:20px;
+        &_spacing{
+            padding-top:55px;
+        }
+        &_spacing_second{
+            padding-top:40px;
+        }
+        &_spacing_third{
+            padding-top:65px;
+        }
+    }
+    .deficiencia_visual_daltonismo_wrapper_right{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        align-items: flex-end;
+        align-content: center;
+        &_spacing{
+            padding-top:190px;
+        }
+        &_spacing_second{
+            padding-top: 80px !important;
+        }
+        &_spacing_third{
+            padding-top:20px;
+        }
+    }
+}
