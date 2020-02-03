@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.407 19.06">
+  <defs>
+    <style>
+      .cls-1, .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-1, .cls-2 {
+        stroke: #fff;
+        stroke-width: 2px;
+      }
+
+      .cls-2, .cls-5 {
+        fill: none;
+      }
+
+      .cls-4 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="Pesquisa" transform="translate(-94 -621)">
+    <path id="Path_733" data-name="Path 733" class="cls-1" d="M4.112,4.069l6.481,6.51" transform="translate(101.105 628.776)"/>
+    <g id="Ellipse_6" data-name="Ellipse 6" class="cls-2" transform="translate(94 621)">
+      <circle class="cls-4" cx="6.883" cy="6.883" r="6.883"/>
+      <circle class="cls-5" cx="6.883" cy="6.883" r="5.883"/>
+    </g>
+    <path id="Path_734" data-name="Path 734" class="cls-3" d="M.656,0c.362,0,.7.033.7.4a1.31,1.31,0,0,1-.978.953C.02,1.348,0,1.018,0,.656A.656.656,0,0,1,.656,0Z" transform="translate(111.043 638.699)"/>
+  </g>
+</svg>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 19">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="Burguer_icon" data-name="Burguer icon" transform="translate(-128 -624)">
+    <path id="Path_736" data-name="Path 736" class="cls-1" d="M1.5,0h21a1.5,1.5,0,0,1,0,3H1.5a1.5,1.5,0,0,1,0-3Z" transform="translate(128 624)"/>
+    <path id="Path_737" data-name="Path 737" class="cls-1" d="M1.5,0h21a1.5,1.5,0,0,1,0,3H1.5a1.5,1.5,0,0,1,0-3Z" transform="translate(128 632)"/>
+    <path id="Path_738" data-name="Path 738" class="cls-1" d="M1.5,0h21a1.5,1.5,0,0,1,0,3H1.5a1.5,1.5,0,0,1,0-3Z" transform="translate(128 640)"/>
+  </g>
+</svg>
