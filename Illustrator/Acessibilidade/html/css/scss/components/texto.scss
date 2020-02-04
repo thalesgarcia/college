@@ -129,14 +129,11 @@
             margin-top: -75px;
 
             margin-right: 105px;
-            
             text-align: justify;
             
             padding-right: 15px;
-            
             padding-left: 12px
         }
-
     }
     .paragrafo_imagem_transtorno_aprendizagem {
         font-size: 1em;
@@ -183,11 +180,11 @@
             margin-top: -51px;
         }
         &_right_second{
-            margin-top: -122px;
-            margin-left: 104px;
+            margin-top: -108px !important;
+            margin: 0 auto;
             text-align: justify;
             padding-right: 15px;
-            padding-left: 20px;
+            padding-left: 127px;
         }
         &_right_third{
             margin-top: -145px;
@@ -218,4 +215,132 @@
             text-align:justify;
         }
     }
+}
+@media(min-width:$breakpoint-sm_p1){
+    .paragrafo_imagem_def_visual {
+        font-size: 1em;
+        text-align: center;
+
+        &_right {
+            margin: 0 auto;
+            margin-top: 70px !important;
+        }
+        &_right_second{
+            margin-top: -135px;
+            margin-left: 105px;
+            text-align: justify;
+            padding-right: 15px;
+            padding-left: 120px
+        }
+        &_right_third{
+            margin-top: -95px !important;
+            margin: 0 auto;
+            text-align: justify;
+            padding-right: 15px;
+            padding-left: 225px
+        }
+
+        &_left {
+            text-align: justify;
+            padding-left: 15px;
+            padding-right: 230px;
+            margin:0 auto;
+            margin-top: -230px !important;
+        }
+        &_left_second{
+            margin-top: -155px;
+            margin-right: 105px;
+            text-align: justify;
+            padding-right: 120px;
+            padding-left: 12px
+        }
+        &_left_third{
+            margin-top: -135px !important;
+            margin: 0 auto;
+            text-align: justify;
+            padding-right: 225px;
+            padding-left: 12px;
+            padding-bottom:35px;
+        }
+    }
+    .paragrafo_imagem_transtorno_aprendizagem {
+        font-size: 1em;
+        text-align: center;
+
+        &_right {
+            margin-left: 105px;
+            margin-top: -51px;
+        }
+        &_right_second{
+            margin-top: -101px !important;
+            margin: 0 auto;
+            text-align: justify;
+            padding-right: 15px;
+            padding-left: 150px;
+        }
+        &_right_third{
+            text-align: justify;
+            padding-right: 15px;
+            padding-left: 155px;
+            margin: 0 auto;
+            margin-top: -138px;
+        }
+        &_left {
+            margin: 0 auto;
+            text-align: justify;
+            padding-left: 15px;
+            padding-right: 153px;
+            margin-top: -112px;
+        }
+        &_left_second{
+            margin-top: -145px !important;
+            padding-left: 15px;
+            padding-right: 155px;
+            margin: 0 auto;
+            text-align:justify;
+        }
+    }
+    .paragrafo_imagem_def_motora{
+        font-size: 1em;
+        text-align: center;
+        &_right {
+            margin-left: 105px;
+            margin-top: -51px;
+        }
+        &_right_second{
+            margin-top: -122px;
+            margin-left: 104px;
+            text-align: justify;
+            padding-right: 15px;
+            padding-left: 20px;
+        }
+        &_right_third{
+            margin-top: -145px;
+            margin-left: 104px;
+            text-align: justify;
+            padding-right: 15px;
+            padding-left: 20px;
+        }
+        &_left {
+           margin:0 auto;
+            padding-right: 120px;
+            margin-top: -87px;
+            padding-bottom: 9px;
+            text-align: justify !important;
+        }
+        &_left_second{
+            margin-top: -128px;
+            padding-left: 15px;
+            padding-right: 25px;
+            margin-right: 100px;
+            text-align:justify;
+        }
+        &_left_third{
+            margin-top: -95px;
+            padding-left: 15px;
+            padding-right: 25px;
+            margin-right: 100px;
+            text-align:justify;
+        }
+    }   
 }

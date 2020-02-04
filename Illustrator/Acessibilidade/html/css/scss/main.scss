@@ -10,11 +10,9 @@
 'base/typography.scss',
 'base/style.scss';
 
-
 @import
 'layout/header.scss',
 'layout/menu.scss';
-
 
 @import 
 'components/banner.scss',
@@ -23,6 +21,7 @@
 'components/texto.scss',
 'components/listas.scss',
 'components/links.scss';
+
 @import 
 'pages/acessibilidade.scss',
 'pages/deficiencia_visual.scss',

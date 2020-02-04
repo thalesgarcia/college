@@ -60,3 +60,35 @@
         }
     }
 }
+
+@media(min-width:$breakpoint-sm_p1){
+    .deficiencia_visual_daltonismo_wrapper_left{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        align-content: center;
+        padding-bottom:20px;
+        &_spacing{
+            padding-top:30px;
+        }
+        &_spacing_second{
+            padding-top:30px;
+        }
+        &_spacing_third{
+            padding-top:30px;
+        }
+    }
+    .deficiencia_visual_daltonismo_wrapper_right{
+        &_spacing{
+            padding-top:100px;
+        }
+        &_spacing_second{
+            padding-top: 40px !important;
+        }
+        &_spacing_third{
+            padding-top:20px;
+        }
+    }
+}

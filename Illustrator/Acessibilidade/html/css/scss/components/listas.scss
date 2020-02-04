@@ -32,25 +32,21 @@
             color: $cor-lista-item-titulo;
             font-size: 1em;
             font-family: 'Concert One', cursive;
-
         }
     }
     .lista_daltonismo{
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        justify-content: center;
-        align-items: center;
-        align-content: flex-start;
+        
         padding-top: 15px;
-
-padding-bottom: 15px;
-
-padding-left: 35px;
+        padding-bottom: 15px;
+        padding-left: 35px;
         &_item{
+            display: flex;
+            margin: 0;
+            padding: 0;
             &_titulo{
                 color:$cor-lista-daltonismo-item;
                 text-transform: uppercase;
+               
             }
         }
         &_success{

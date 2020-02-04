@@ -16,12 +16,11 @@
         }
         &_video{
             height: 215px;
-            width: 395px;
-            padding-left: 30px;
-            padding-right: 10px;
+            width: 100%;
+            padding-left: 15px;
+            padding-right: 15px;
             padding-bottom:15px;
         }
-        
     }
     .icone_deficiencia_auditiva{
         height: 40px;
@@ -30,5 +29,12 @@
             &_rotate{
                 transform: rotateY(180deg);
             }
+    }
+}
+@media(min-width:$breakpoint-sm_p1){
+    .deficiencia_auditiva{
+        &_video{
+            height: 260px !important;
+        }
     }
 }

@@ -1,4 +1,4 @@
-@media(min-width:$breakpoint-xsm) and (max-width:$breakpoint-sm) {
+@media(min-width:$breakpoint-xsm) and (max-width:$breakpoint-smd) {
     .menu-principal {
         
         &_btn {
@@ -103,33 +103,7 @@
         background-color: rgba(0, 0, 0, 0.4)
     }
 }
-@media(min-width:$breakpoint-sm_p1){
-    .menu-principal {
-        position: relative;
-        top: -30%;
-        &_btn {
-            display: none;
-        }
-        &_lista {
-           color:$cor-lista-item-menu-link;
-           text-decoration: none;
-           text-transform: uppercase;
-           list-style: none;
-            display: -webkit-inline-box !important;
-            display:inline-block;
-            &-itens{
-                padding:15px;
-                & a{
-                    text-decoration: none;
-                }
-                & a:hover{
-                    color:orange;
-                }
-            }
-            &-itens:hover{color:yellow}
-        }
-    }
-}
+
 
 // @media not all and (max-width:$breakpoint-smd){
 //     .open_menu,

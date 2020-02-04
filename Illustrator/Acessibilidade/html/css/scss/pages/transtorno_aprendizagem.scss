@@ -1,7 +1,7 @@
 @media(min-width:$breakpoint-xsm) {
     .icone_transtorno_aprendizagem{
-        height: 40px;
-            width: 40px;
+        height: 37px;
+            width: 34px;
             margin:0 auto;
             &_rotate{
                 transform:rotateY(180deg);
@@ -48,6 +48,53 @@
                 }
                 &_spacing_second{
                     padding-top:90px;
+                }
+        }
+        &_span_dislexia{
+            color:$cor-dislexia;
+            font-size:1.1em;
+        }
+        &_span_discalculia{
+            color:$cor-discalculia;
+            font-size:1.1em;
+        }
+        &_span_disgrafia{
+            color:$cor-disgrafia;
+            font-size:1.1em;
+        }
+        &_span_tdah{
+            color:$cor-tdah;
+            font-size:1.1em;
+        }
+    }
+    }
+}
+
+@media(min-width:$breakpoint-sm_p1){
+    .transtorno_aprendizagem{
+        
+        &_wrapper{
+            &_right{
+                &_spacing{
+                    padding-top:40px !important;
+                }
+                &_spacing_second{
+                    padding-top:40px;
+                }
+            }
+            &_left{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+                align-items: flex-start;
+                align-content: center;
+                padding-bottom:20px;
+                &_spacing{
+                    padding-top:65px;
+                }
+                &_spacing_second{
+                    padding-top:50px;
                 }
         }
         &_span_dislexia{

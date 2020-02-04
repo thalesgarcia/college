@@ -1,40 +1,42 @@
 @media(min-width:$breakpoint-xsm){
     .banner{
-&_img{
-    height: 39px;
-    width: 45px;
-    display: inline-flex;
-    display: -webkit-inline-box;
-	flex-direction: column;
-	flex-wrap: wrap;
-	justify-content: flex-start;
-	align-items: center;
-    align-content: flex-start;
-    padding-top: 2px;
-    padding-left: 6px;
-}
+        &_img{
+            height: 40px;
+            width: 45px;
+            display: inline-flex;
+            display: -webkit-inline-box;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-items: center;
+            align-content: flex-start;
+            padding-top: 2px;
+            padding-left: 1px;
+        }
         &_topo{
             height: 143px;
             width: 100%;
             background-image: radial-gradient( $cor-banner-gradiente-1 1%, $cor-banner-gradiente-2 80%);
             display: flex;
-            
         }
         &_imgs{
             &_left{
-                height: 70px;
+                height: auto;
                 width: 100%;
-                flex-direction: row;
-                flex-wrap: wrap;
-                justify-content: space-between;
-                align-items: flex-start;
-                align-content: space-between;
                 padding-top: 3px;
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: space-around;
             }
             &_right{
-                height: 70px;
+                height: auto;
                 width: 100%;
                 padding-top: 3px;
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: space-around;
             }
         }
         &_titulo{
@@ -42,9 +44,37 @@
             font-size: 1.5em;
             text-align: center;
             padding-top: 53px;
-            margin-left:20px;
+            margin-left:22px;
             margin-right:22px;
         }
     }
-    
+}
+@media(min-width:$breakpoint-sm_p1){
+    .banner{
+        &_topo{
+            height: 120px ;
+            display: flex;
+        }
+        &_titulo{
+            padding-top: 39px;
+        }
+        &_img{
+            height: 50px;
+            width: 45px;
+        }
+        &_imgs{
+            &_right{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+            }
+            &_left{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
 }

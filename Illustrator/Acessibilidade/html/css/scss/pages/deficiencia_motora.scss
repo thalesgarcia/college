@@ -54,12 +54,44 @@
         
     }
     .icone_deficiencia_motora{
-        height: 40px;
-            width: 40px;
+        height: 33px;
+            width: 30px;
             margin:0 auto;
             &_rotate{
                 transform: rotateY(180deg);
             }
     }
 
+}
+
+@media(min-width:$breakpoint-sm_p1){
+    .deficiencia_motora{
+       
+        &_wrapper{
+          
+            &_right{
+                &_spacing{
+                    padding-top:30px;
+                }
+                &_spacing_second{
+                    padding-top:55px;
+                }
+                &_spacing_third{
+                    padding-top: 17px;
+                }
+            }
+            &_left{
+                &_spacing{
+                    padding-top:35px !important;
+                }
+                &_spacing_second{
+                    padding-top:20px;
+                }
+                &_spacing_third{
+                    padding-top:49px;
+                }
+            }
+        }
+        
+    }
 }
